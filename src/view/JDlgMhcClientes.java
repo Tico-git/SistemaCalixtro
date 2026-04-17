@@ -20,8 +20,70 @@ public class JDlgMhcClientes extends javax.swing.JDialog {
         initComponents();
         setTitle("Sistema de Vendas de Camisas de Time - Clientes");
         setLocationRelativeTo(null);
+           jTxtDataCadastro.setEnabled(false);
+        jTxtEmail.setEnabled(false);
+        jTxtMhcBairro.setEnabled(false);
+        jTxtMhcCEP.setEnabled(false);
+        jTxtMhcComplemento.setEnabled(false);
+        jTxtMhcEndereco.setEnabled(false);
+        jTxtApelido.setEnabled(false);
+        jTxtMhcNumero.setEnabled(false);
+        jTxtMhcEstadoCivil.setEnabled(false);
+        jTxtMhcUF.setEnabled(false);
+        jTxtMhcNaturalidade.setEnabled(false);
+        jFmtCpf.setEnabled(false);
+        jTxtTelefone.setEnabled(false);
+        jTxtHoraCadastro.setEnabled(false);
+        jBtnCancelar.setEnabled(false);
+        jBtnConfirmar.setEnabled(false);
+        jBtnAlterar.setEnabled(true);
+        jBtnExcluir.setEnabled(true);
+        jBtnIncluir.setEnabled(true);
+        jBtnPesquisar.setEnabled(true);
     }
-
+  public void habilitar(){
+           jTxtDataCadastro.setEnabled(true);
+        jTxtEmail.setEnabled(true);
+        jTxtMhcBairro.setEnabled(true);
+        jTxtMhcCEP.setEnabled(true);
+        jTxtMhcComplemento.setEnabled(true);
+        jTxtMhcEndereco.setEnabled(true);
+        jTxtApelido.setEnabled(true);
+        jTxtMhcNumero.setEnabled(true);
+        jTxtMhcEstadoCivil.setEnabled(true);
+        jTxtMhcUF.setEnabled(true);
+        jTxtMhcNaturalidade.setEnabled(true);
+        jFmtCpf.setEnabled(true);
+        jTxtTelefone.setEnabled(true);
+        jTxtHoraCadastro.setEnabled(true);
+        jBtnCancelar.setEnabled(true);
+        jBtnConfirmar.setEnabled(true);
+         jBtnAlterar.setEnabled(false);
+        jBtnExcluir.setEnabled(false);
+        jBtnIncluir.setEnabled(false);
+        jBtnPesquisar.setEnabled(false);
+  }
+    public void desabilitar(){
+               jTxtDataCadastro.setEnabled(false);
+        jTxtEmail.setEnabled(false);
+        jTxtMhcBairro.setEnabled(false);
+        jTxtMhcCEP.setEnabled(false);
+        jTxtMhcComplemento.setEnabled(false);
+        jTxtMhcEndereco.setEnabled(false);
+        jTxtApelido.setEnabled(false);
+        jTxtMhcNumero.setEnabled(false);
+        jTxtMhcEstadoCivil.setEnabled(false);
+        jTxtMhcUF.setEnabled(false);
+        jTxtMhcNaturalidade.setEnabled(false);
+        jFmtCpf.setEnabled(false);
+        jTxtTelefone.setEnabled(false);
+        jTxtHoraCadastro.setEnabled(false);
+        jBtnCancelar.setEnabled(false);
+        jBtnConfirmar.setEnabled(false);
+        jBtnAlterar.setEnabled(true);
+        jBtnExcluir.setEnabled(true);
+        jBtnIncluir.setEnabled(true);
+        jBtnPesquisar.setEnabled(true);}
     /**
      * This method is called from within the constructor to initialize the form.
      * WARNING: Do NOT modify this code. The content of this method is always
@@ -93,9 +155,11 @@ public class JDlgMhcClientes extends javax.swing.JDialog {
 
         jBtnConfirmar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/confirmar.png"))); // NOI18N
         jBtnConfirmar.setText("Confirmar");
+        jBtnConfirmar.addActionListener(this::jBtnConfirmarActionPerformed);
 
         jBtnCancelar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/cancelar.png"))); // NOI18N
         jBtnCancelar.setText("Cancelar");
+        jBtnCancelar.addActionListener(this::jBtnCancelarActionPerformed);
 
         jBtnPesquisar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/pesquisar.png"))); // NOI18N
         jBtnPesquisar.setText("Pesquisar");
@@ -325,12 +389,12 @@ public class JDlgMhcClientes extends javax.swing.JDialog {
 
     private void jBtnIncluirActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBtnIncluirActionPerformed
         // TODO add your handling code here:
-        
+        habilitar();
     }//GEN-LAST:event_jBtnIncluirActionPerformed
 
     private void jBtnExcluirActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBtnExcluirActionPerformed
         // TODO add your handling code here:
-     
+        desabilitar();
     }//GEN-LAST:event_jBtnExcluirActionPerformed
 
     private void jTxtApelidoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTxtApelidoActionPerformed
@@ -340,6 +404,16 @@ public class JDlgMhcClientes extends javax.swing.JDialog {
     private void jTxtDataNascActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTxtDataNascActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_jTxtDataNascActionPerformed
+
+    private void jBtnConfirmarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBtnConfirmarActionPerformed
+        // TODO add your handling code here:
+        habilitar();
+    }//GEN-LAST:event_jBtnConfirmarActionPerformed
+
+    private void jBtnCancelarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBtnCancelarActionPerformed
+        // TODO add your handling code here:
+        habilitar();
+    }//GEN-LAST:event_jBtnCancelarActionPerformed
 
     /**
      * @param args the command line arguments
