@@ -20,8 +20,72 @@ public class JDlgMhcFornecedor extends javax.swing.JDialog {
         initComponents();
          setTitle("Sistema de Vendas de Camisas de Time - Fornecedor");
         setLocationRelativeTo(null);
+        jTxtDataCadastro.setEnabled(false);
+        jTxtEmail.setEnabled(false);
+        jTxtMhcBairro.setEnabled(false);
+        jTxtMhcCEP.setEnabled(false);
+        jTxtMhcComplemento.setEnabled(false);
+        jTxtMhcEndereco.setEnabled(false);
+        jTxtMhcNomeComercial.setEnabled(false);
+        jTxtMhcNumero.setEnabled(false);
+        jTxtMhcSite.setEnabled(false);
+        jTxtMhcUF.setEnabled(false);
+        jFmtMhcCNPJ.setEnabled(false);
+        jTxtRazaoSocial.setEnabled(false);
+        jTxtTelefone.setEnabled(false);
+        jTxtMhcCidade.setEnabled(false);
+        jBtnCancelar.setEnabled(false);
+        jBtnConfirmar.setEnabled(false);
+        jBtnAlterar.setEnabled(true);
+        jBtnExcluir.setEnabled(true);
+        jBtnIncluir.setEnabled(true);
+        jBtnPesquisar.setEnabled(true);
     }
+public void habilitar(){
+    jTxtRazaoSocial.setEnabled(true);
+        jTxtTelefone.setEnabled(true);
+        jTxtMhcCidade.setEnabled(true);
+     jTxtDataCadastro.setEnabled(true);
+        jTxtEmail.setEnabled(true);
+        jTxtMhcBairro.setEnabled(true);
+        jTxtMhcCEP.setEnabled(true);
+        jTxtMhcComplemento.setEnabled(true);
+        jTxtMhcEndereco.setEnabled(true);
+        jTxtMhcNomeComercial.setEnabled(true);
+        jTxtMhcNumero.setEnabled(true);
+        jTxtMhcSite.setEnabled(true);
+        jTxtMhcUF.setEnabled(true);
+        jFmtMhcCNPJ.setEnabled(true);
+        jBtnCancelar.setEnabled(true);
+        jBtnConfirmar.setEnabled(true);
+          jBtnAlterar.setEnabled(false);
+        jBtnExcluir.setEnabled(false);
+        jBtnIncluir.setEnabled(false);
+        jBtnPesquisar.setEnabled(false);
+}
 
+public void desabilitar(){
+  jTxtDataCadastro.setEnabled(false);
+  jTxtRazaoSocial.setEnabled(false);
+        jTxtTelefone.setEnabled(false);
+        jTxtMhcCidade.setEnabled(false);
+        jTxtEmail.setEnabled(false);
+        jTxtMhcBairro.setEnabled(false);
+        jTxtMhcCEP.setEnabled(false);
+        jTxtMhcComplemento.setEnabled(false);
+        jTxtMhcEndereco.setEnabled(false);
+        jTxtMhcNomeComercial.setEnabled(false);
+        jTxtMhcNumero.setEnabled(false);
+        jTxtMhcSite.setEnabled(false);
+        jTxtMhcUF.setEnabled(false);
+        jFmtMhcCNPJ.setEnabled(false);
+        jBtnCancelar.setEnabled(false);
+        jBtnConfirmar.setEnabled(false);
+        jBtnAlterar.setEnabled(true);
+        jBtnExcluir.setEnabled(true);
+        jBtnIncluir.setEnabled(true);
+        jBtnPesquisar.setEnabled(true);
+}
     /**
      * This method is called from within the constructor to initialize the form.
      * WARNING: Do NOT modify this code. The content of this method is always
@@ -42,7 +106,7 @@ public class JDlgMhcFornecedor extends javax.swing.JDialog {
         jLblEmail = new javax.swing.JLabel();
         jLabel9 = new javax.swing.JLabel();
         jTxtEmail = new javax.swing.JTextField();
-        jTextField1 = new javax.swing.JTextField();
+        jTxtMhcCidade = new javax.swing.JTextField();
         jLblTelefone = new javax.swing.JLabel();
         jLabel10 = new javax.swing.JLabel();
         jTxtTelefone = new javax.swing.JTextField();
@@ -70,11 +134,13 @@ public class JDlgMhcFornecedor extends javax.swing.JDialog {
 
         jBtnConfirmar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/confirmar.png"))); // NOI18N
         jBtnConfirmar.setText("Confirmar");
+        jBtnConfirmar.addActionListener(this::jBtnConfirmarActionPerformed);
 
         jLabel7.setText("Complemento");
 
         jBtnCancelar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/cancelar.png"))); // NOI18N
         jBtnCancelar.setText("Cancelar");
+        jBtnCancelar.addActionListener(this::jBtnCancelarActionPerformed);
 
         jBtnPesquisar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/pesquisar.png"))); // NOI18N
         jBtnPesquisar.setText("Pesquisar");
@@ -160,7 +226,7 @@ public class JDlgMhcFornecedor extends javax.swing.JDialog {
                                 .addComponent(jLabel9)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                             .addGroup(layout.createSequentialGroup()
-                                .addComponent(jTextField1, javax.swing.GroupLayout.PREFERRED_SIZE, 201, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addComponent(jTxtMhcCidade, javax.swing.GroupLayout.PREFERRED_SIZE, 201, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addGap(0, 0, Short.MAX_VALUE)))
                         .addGap(478, 478, 478))
                     .addGroup(layout.createSequentialGroup()
@@ -236,7 +302,7 @@ public class JDlgMhcFornecedor extends javax.swing.JDialog {
                 .addGap(5, 5, 5)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jTxtMhcSite, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jTextField1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(jTxtMhcCidade, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLblNivel)
@@ -295,13 +361,23 @@ public class JDlgMhcFornecedor extends javax.swing.JDialog {
 
     private void jBtnIncluirActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBtnIncluirActionPerformed
         // TODO add your handling code here:
-
+habilitar();
     }//GEN-LAST:event_jBtnIncluirActionPerformed
 
     private void jBtnExcluirActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBtnExcluirActionPerformed
         // TODO add your handling code here:
-
+desabilitar();
     }//GEN-LAST:event_jBtnExcluirActionPerformed
+
+    private void jBtnConfirmarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBtnConfirmarActionPerformed
+        // TODO add your handling code here:
+        habilitar();
+    }//GEN-LAST:event_jBtnConfirmarActionPerformed
+
+    private void jBtnCancelarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBtnCancelarActionPerformed
+        // TODO add your handling code here:
+        habilitar();
+    }//GEN-LAST:event_jBtnCancelarActionPerformed
 
     /**
      * @param args the command line arguments
@@ -362,11 +438,11 @@ public class JDlgMhcFornecedor extends javax.swing.JDialog {
     private javax.swing.JLabel jLblNome;
     private javax.swing.JLabel jLblSenha;
     private javax.swing.JLabel jLblTelefone;
-    private javax.swing.JTextField jTextField1;
     private javax.swing.JTextField jTxtDataCadastro;
     private javax.swing.JTextField jTxtEmail;
     private javax.swing.JTextField jTxtMhcBairro;
     private javax.swing.JTextField jTxtMhcCEP;
+    private javax.swing.JTextField jTxtMhcCidade;
     private javax.swing.JTextField jTxtMhcComplemento;
     private javax.swing.JTextField jTxtMhcEndereco;
     private javax.swing.JTextField jTxtMhcNomeComercial;

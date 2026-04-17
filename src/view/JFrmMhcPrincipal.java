@@ -17,6 +17,8 @@ public class JFrmMhcPrincipal extends javax.swing.JFrame {
      */
     public JFrmMhcPrincipal() {
         initComponents();
+        setTitle("Sistema de Vendas de Camisas de Time - Inicio");
+        setExtendedState(MAXIMIZED_BOTH);
     }
 
     /**
@@ -48,26 +50,31 @@ public class JFrmMhcPrincipal extends javax.swing.JFrame {
         jMnuUsuarios.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_U, java.awt.event.InputEvent.CTRL_DOWN_MASK));
         jMnuUsuarios.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/usuario.png"))); // NOI18N
         jMnuUsuarios.setText("Usuários");
+        jMnuUsuarios.addActionListener(this::jMnuUsuariosActionPerformed);
         jMenu1.add(jMnuUsuarios);
 
         jMnuClientes.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_C, java.awt.event.InputEvent.CTRL_DOWN_MASK));
         jMnuClientes.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/cliente.png"))); // NOI18N
         jMnuClientes.setText("Clientes");
+        jMnuClientes.addActionListener(this::jMnuClientesActionPerformed);
         jMenu1.add(jMnuClientes);
 
         jMnuFornecedor.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_F, java.awt.event.InputEvent.CTRL_DOWN_MASK));
         jMnuFornecedor.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/fornecedor2.png"))); // NOI18N
         jMnuFornecedor.setText("Fornecedor");
+        jMnuFornecedor.addActionListener(this::jMnuFornecedorActionPerformed);
         jMenu1.add(jMnuFornecedor);
 
         jMnuProdutos.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_P, java.awt.event.InputEvent.CTRL_DOWN_MASK));
         jMnuProdutos.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/produto.png"))); // NOI18N
         jMnuProdutos.setText("Produtos");
+        jMnuProdutos.addActionListener(this::jMnuProdutosActionPerformed);
         jMenu1.add(jMnuProdutos);
 
         jMnuLicencas.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_L, java.awt.event.InputEvent.CTRL_DOWN_MASK));
         jMnuLicencas.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/licencas.png"))); // NOI18N
         jMnuLicencas.setText("Licenças");
+        jMnuLicencas.addActionListener(this::jMnuLicencasActionPerformed);
         jMenu1.add(jMnuLicencas);
         jMenu1.add(jSeparator1);
 
@@ -105,6 +112,36 @@ public class JFrmMhcPrincipal extends javax.swing.JFrame {
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
+
+    private void jMnuUsuariosActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMnuUsuariosActionPerformed
+        // TODO add your handling code here:
+      JDlgMhcUsuarios dialog = new JDlgMhcUsuarios(this, true);
+dialog.setVisible(true);
+    }//GEN-LAST:event_jMnuUsuariosActionPerformed
+
+    private void jMnuClientesActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMnuClientesActionPerformed
+        // TODO add your handling code here:
+         JDlgMhcClientes dialog = new JDlgMhcClientes(this, true);
+dialog.setVisible(true);
+    }//GEN-LAST:event_jMnuClientesActionPerformed
+
+    private void jMnuFornecedorActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMnuFornecedorActionPerformed
+        // TODO add your handling code here:
+          JDlgMhcFornecedor dialog = new JDlgMhcFornecedor(this, true);
+dialog.setVisible(true);
+    }//GEN-LAST:event_jMnuFornecedorActionPerformed
+
+    private void jMnuProdutosActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMnuProdutosActionPerformed
+        // TODO add your handling code here:
+          JDlgMhcProdutos dialog = new JDlgMhcProdutos(this, true);
+dialog.setVisible(true);
+    }//GEN-LAST:event_jMnuProdutosActionPerformed
+
+    private void jMnuLicencasActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMnuLicencasActionPerformed
+        // TODO add your handling code here:
+          JDlgMhcLicencas dialog = new JDlgMhcLicencas(this, true);
+dialog.setVisible(true);
+    }//GEN-LAST:event_jMnuLicencasActionPerformed
 
     /**
      * @param args the command line arguments
