@@ -326,52 +326,12 @@ public class JDlgMhcClientes extends javax.swing.JDialog {
 
     private void jBtnIncluirActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBtnIncluirActionPerformed
         // TODO add your handling code here:
-        jTxtNome.setEnabled(true);
-        jTxtApelido.setEnabled(true);
-        jTxtAcessos.setEnabled(true);
-        jTxtDataCadastro.setEnabled(true);
-        jTxtHoraCadastro.setEnabled(true);
-        jTxtDataNasc.setEnabled(true);
-        jTxtId.setEnabled(true);
-        jFmtCpf.setEnabled(true);
-        jTxtEmail.setEnabled(true);
-        jTxtTelefone.setEnabled(true);
-        jPwfSenha.setEnabled(true);
-        jCboNivel.setEnabled(true);
-        jChbAtivo.setEnabled(true);
-        jCboGenero.setEnabled(true);
-        jCboCargo.setEnabled(true);
-        jBtnAlterar.setEnabled(true);
-        jBtnCancelar.setEnabled(false);
-        jBtnConfirmar.setEnabled(false);
-        jBtnExcluir.setEnabled(true);
-        jBtnIncluir.setEnabled(false);
-        jBtnPesquisar.setEnabled(true);
+        
     }//GEN-LAST:event_jBtnIncluirActionPerformed
 
     private void jBtnExcluirActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBtnExcluirActionPerformed
         // TODO add your handling code here:
-        jTxtNome.setEnabled(false);
-        jTxtApelido.setEnabled(false);
-        jTxtAcessos.setEnabled(false);
-        jTxtDataCadastro.setEnabled(false);
-        jTxtHoraCadastro.setEnabled(false);
-        jTxtDataNasc.setEnabled(false);
-        jTxtId.setEnabled(false);
-        jFmtCpf.setEnabled(false);
-        jTxtEmail.setEnabled(false);
-        jTxtTelefone.setEnabled(false);
-        jPwfSenha.setEnabled(false);
-        jCboNivel.setEnabled(false);
-        jChbAtivo.setEnabled(false);
-        jCboGenero.setEnabled(false);
-        jCboCargo.setEnabled(false);
-        jBtnAlterar.setEnabled(false);
-        jBtnCancelar.setEnabled(true);
-        jBtnConfirmar.setEnabled(true);
-        jBtnExcluir.setEnabled(false);
-        jBtnIncluir.setEnabled(true);
-        jBtnPesquisar.setEnabled(false);
+     
     }//GEN-LAST:event_jBtnExcluirActionPerformed
 
     private void jTxtApelidoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTxtApelidoActionPerformed
