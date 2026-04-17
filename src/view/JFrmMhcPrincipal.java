@@ -34,6 +34,9 @@ setExtendedState(MAXIMIZED_BOTH);
         jMnuCadastro = new javax.swing.JMenu();
         jMnuUsuarios = new javax.swing.JMenuItem();
         jMnuCliente = new javax.swing.JMenuItem();
+        jMnuMhcFornecedor = new javax.swing.JMenuItem();
+        jMnuMhcProdutos = new javax.swing.JMenuItem();
+        jMnuMhcLicencas = new javax.swing.JMenuItem();
         jSeparator1 = new javax.swing.JPopupMenu.Separator();
         jMnuSair = new javax.swing.JMenuItem();
         jMnuMovimento = new javax.swing.JMenu();
@@ -58,6 +61,21 @@ setExtendedState(MAXIMIZED_BOTH);
         jMnuCliente.setText("Cliente");
         jMnuCliente.addActionListener(this::jMnuClienteActionPerformed);
         jMnuCadastro.add(jMnuCliente);
+
+        jMnuMhcFornecedor.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_F, java.awt.event.InputEvent.CTRL_DOWN_MASK));
+        jMnuMhcFornecedor.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/fornecedor2.png"))); // NOI18N
+        jMnuMhcFornecedor.setText("Fornecedor");
+        jMnuCadastro.add(jMnuMhcFornecedor);
+
+        jMnuMhcProdutos.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_P, java.awt.event.InputEvent.CTRL_DOWN_MASK));
+        jMnuMhcProdutos.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/produto.png"))); // NOI18N
+        jMnuMhcProdutos.setText("Produtos");
+        jMnuCadastro.add(jMnuMhcProdutos);
+
+        jMnuMhcLicencas.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_L, java.awt.event.InputEvent.CTRL_DOWN_MASK));
+        jMnuMhcLicencas.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/licencas.png"))); // NOI18N
+        jMnuMhcLicencas.setText("Licenças");
+        jMnuCadastro.add(jMnuMhcLicencas);
         jMnuCadastro.add(jSeparator1);
 
         jMnuSair.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_S, java.awt.event.InputEvent.CTRL_DOWN_MASK));
@@ -90,7 +108,7 @@ setExtendedState(MAXIMIZED_BOTH);
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 277, Short.MAX_VALUE)
+            .addGap(0, 278, Short.MAX_VALUE)
         );
 
         pack();
@@ -134,6 +152,9 @@ setExtendedState(MAXIMIZED_BOTH);
     private javax.swing.JMenu jMnuCadastro;
     private javax.swing.JMenuItem jMnuCliente;
     private javax.swing.JMenuItem jMnuCompras;
+    private javax.swing.JMenuItem jMnuMhcFornecedor;
+    private javax.swing.JMenuItem jMnuMhcLicencas;
+    private javax.swing.JMenuItem jMnuMhcProdutos;
     private javax.swing.JMenu jMnuMovimento;
     private javax.swing.JMenuItem jMnuSair;
     private javax.swing.JMenuItem jMnuUsuarios;
