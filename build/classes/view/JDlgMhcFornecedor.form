@@ -23,13 +23,366 @@
   <Layout>
     <DimensionLayout dim="0">
       <Group type="103" groupAlignment="0" attributes="0">
-          <EmptySpace min="0" pref="400" max="32767" attributes="0"/>
+          <Group type="102" alignment="0" attributes="0">
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Group type="102" alignment="0" attributes="0">
+                      <EmptySpace min="166" max="32767" attributes="0"/>
+                      <Component id="jBtnPesquisar" min="-2" max="-2" attributes="0"/>
+                  </Group>
+                  <Group type="102" alignment="1" attributes="0">
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Group type="103" alignment="0" groupAlignment="1" max="-2" attributes="0">
+                              <Component id="jTxtDataCadastro" alignment="1" pref="194" max="32767" attributes="0"/>
+                              <Component id="jLblEmail" alignment="0" min="-2" pref="37" max="-2" attributes="0"/>
+                              <Component id="jTxtEmail" alignment="1" max="32767" attributes="0"/>
+                          </Group>
+                          <Component id="jLabel1" alignment="0" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Group type="102" attributes="0">
+                              <Group type="103" groupAlignment="0" attributes="0">
+                                  <Component id="jTxtTelefone" alignment="0" max="32767" attributes="0"/>
+                                  <Group type="102" alignment="0" attributes="0">
+                                      <Component id="jLblTelefone" min="-2" max="-2" attributes="0"/>
+                                      <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
+                                  </Group>
+                              </Group>
+                              <EmptySpace min="-2" pref="78" max="-2" attributes="0"/>
+                          </Group>
+                          <Group type="102" attributes="0">
+                              <Group type="103" groupAlignment="0" attributes="0">
+                                  <Component id="jTxtMhcUF" min="-2" pref="33" max="-2" attributes="0"/>
+                                  <Component id="jLabel10" min="-2" pref="43" max="-2" attributes="0"/>
+                              </Group>
+                              <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
+                          </Group>
+                      </Group>
+                  </Group>
+                  <Group type="102" alignment="0" attributes="0">
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Component id="jTxtMhcSite" alignment="0" min="-2" pref="187" max="-2" attributes="0"/>
+                          <Component id="jLblDataNasc" alignment="0" min="-2" pref="112" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Group type="102" alignment="0" attributes="0">
+                              <Component id="jLabel9" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace min="33" max="32767" attributes="0"/>
+                          </Group>
+                          <Group type="102" alignment="0" attributes="0">
+                              <Component id="jTextField1" min="-2" pref="201" max="-2" attributes="0"/>
+                              <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
+                          </Group>
+                      </Group>
+                      <EmptySpace min="-2" pref="478" max="-2" attributes="0"/>
+                  </Group>
+                  <Group type="102" alignment="0" attributes="0">
+                      <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                          <Group type="102" alignment="0" attributes="0">
+                              <Component id="jBtnIncluir" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace max="-2" attributes="0"/>
+                              <Component id="jBtnAlterar" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                              <Component id="jBtnExcluir" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace max="-2" attributes="0"/>
+                              <Component id="jBtnConfirmar" min="-2" pref="119" max="-2" attributes="0"/>
+                              <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                              <Component id="jBtnCancelar" min="-2" max="-2" attributes="0"/>
+                          </Group>
+                          <Group type="102" alignment="0" attributes="0">
+                              <EmptySpace max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="0" attributes="0">
+                                  <Group type="102" attributes="0">
+                                      <Component id="jTxtRazaoSocial" min="-2" pref="299" max="-2" attributes="0"/>
+                                      <EmptySpace type="separate" max="-2" attributes="0"/>
+                                      <Component id="jTxtMhcNomeComercial" min="-2" pref="322" max="-2" attributes="0"/>
+                                  </Group>
+                                  <Group type="102" attributes="0">
+                                      <Component id="jLblNome" min="-2" max="-2" attributes="0"/>
+                                      <EmptySpace min="-2" pref="249" max="-2" attributes="0"/>
+                                      <Component id="jLblApelido" min="-2" max="-2" attributes="0"/>
+                                  </Group>
+                              </Group>
+                              <EmptySpace max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="0" attributes="0">
+                                  <Component id="jLblCpf" alignment="0" min="-2" max="-2" attributes="0"/>
+                                  <Group type="102" alignment="0" attributes="0">
+                                      <Component id="jFmtMhcCNPJ" min="-2" pref="221" max="-2" attributes="0"/>
+                                      <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
+                                  </Group>
+                              </Group>
+                          </Group>
+                          <Group type="102" alignment="0" attributes="0">
+                              <Component id="jLblSenha" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace min="-2" pref="211" max="-2" attributes="0"/>
+                              <Component id="jLblNivel" min="-2" pref="37" max="-2" attributes="0"/>
+                              <EmptySpace min="-2" pref="73" max="-2" attributes="0"/>
+                              <Component id="jLabel3" min="-2" pref="37" max="-2" attributes="0"/>
+                              <EmptySpace min="-2" pref="134" max="-2" attributes="0"/>
+                              <Component id="jLabel7" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace min="-2" pref="82" max="-2" attributes="0"/>
+                              <Component id="jLabel8" min="-2" max="-2" attributes="0"/>
+                          </Group>
+                          <Group type="102" alignment="0" attributes="0">
+                              <Component id="jTxtMhcEndereco" min="-2" pref="252" max="-2" attributes="0"/>
+                              <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                              <Component id="jTxtMhcCEP" min="-2" pref="100" max="-2" attributes="0"/>
+                              <EmptySpace max="-2" attributes="0"/>
+                              <Component id="jTxtMhcBairro" min="-2" pref="170" max="-2" attributes="0"/>
+                              <EmptySpace max="-2" attributes="0"/>
+                              <Component id="jTxtMhcComplemento" min="-2" pref="151" max="-2" attributes="0"/>
+                              <EmptySpace max="-2" attributes="0"/>
+                              <Component id="jTxtMhcNumero" max="32767" attributes="0"/>
+                          </Group>
+                      </Group>
+                      <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
+                  </Group>
+              </Group>
+              <EmptySpace max="-2" attributes="0"/>
+          </Group>
       </Group>
     </DimensionLayout>
     <DimensionLayout dim="1">
       <Group type="103" groupAlignment="0" attributes="0">
-          <EmptySpace min="0" pref="300" max="32767" attributes="0"/>
+          <Group type="102" alignment="0" attributes="0">
+              <EmptySpace max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="3" attributes="0">
+                  <Component id="jLblApelido" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="jLblNome" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="jLblCpf" alignment="3" min="-2" max="-2" attributes="0"/>
+              </Group>
+              <EmptySpace max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Component id="jTxtRazaoSocial" alignment="0" min="-2" max="-2" attributes="0"/>
+                  <Group type="103" alignment="0" groupAlignment="3" attributes="0">
+                      <Component id="jTxtMhcNomeComercial" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="jFmtMhcCNPJ" alignment="3" min="-2" max="-2" attributes="0"/>
+                  </Group>
+              </Group>
+              <EmptySpace max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="3" attributes="0">
+                  <Component id="jLblDataNasc" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="jLabel9" alignment="3" min="-2" max="-2" attributes="0"/>
+              </Group>
+              <EmptySpace min="-2" pref="5" max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="3" attributes="0">
+                  <Component id="jTxtMhcSite" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="jTextField1" alignment="3" min="-2" max="-2" attributes="0"/>
+              </Group>
+              <EmptySpace max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="3" attributes="0">
+                  <Component id="jLblNivel" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="jLblSenha" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="jLabel3" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="jLabel7" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="jLabel8" alignment="3" min="-2" max="-2" attributes="0"/>
+              </Group>
+              <EmptySpace max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="3" attributes="0">
+                  <Component id="jTxtMhcEndereco" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="jTxtMhcCEP" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="jTxtMhcBairro" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="jTxtMhcComplemento" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="jTxtMhcNumero" alignment="3" min="-2" max="-2" attributes="0"/>
+              </Group>
+              <EmptySpace max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="3" attributes="0">
+                  <Component id="jLblEmail" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="jLblTelefone" alignment="3" min="-2" max="-2" attributes="0"/>
+              </Group>
+              <EmptySpace min="-2" pref="10" max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="3" attributes="0">
+                  <Component id="jTxtEmail" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="jTxtTelefone" alignment="3" min="-2" max="-2" attributes="0"/>
+              </Group>
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Group type="102" alignment="0" attributes="0">
+                      <EmptySpace min="-2" pref="15" max="-2" attributes="0"/>
+                      <Component id="jLabel10" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Component id="jTxtMhcUF" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace min="-2" pref="25" max="-2" attributes="0"/>
+                      <Component id="jBtnPesquisar" min="-2" max="-2" attributes="0"/>
+                  </Group>
+                  <Group type="102" alignment="0" attributes="0">
+                      <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                      <Component id="jLabel1" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Component id="jTxtDataCadastro" min="-2" max="-2" attributes="0"/>
+                  </Group>
+              </Group>
+              <EmptySpace type="unrelated" max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="3" attributes="0">
+                  <Component id="jBtnIncluir" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="jBtnAlterar" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="jBtnExcluir" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="jBtnConfirmar" alignment="3" min="-2" pref="31" max="-2" attributes="0"/>
+                  <Component id="jBtnCancelar" alignment="3" min="-2" max="-2" attributes="0"/>
+              </Group>
+              <EmptySpace max="32767" attributes="0"/>
+          </Group>
       </Group>
     </DimensionLayout>
   </Layout>
+  <SubComponents>
+    <Component class="javax.swing.JButton" name="jBtnConfirmar">
+      <Properties>
+        <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+          <Image iconType="3" name="/imagens/confirmar.png"/>
+        </Property>
+        <Property name="text" type="java.lang.String" value="Confirmar"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JLabel" name="jLabel7">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Complemento"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JButton" name="jBtnCancelar">
+      <Properties>
+        <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+          <Image iconType="3" name="/imagens/cancelar.png"/>
+        </Property>
+        <Property name="text" type="java.lang.String" value="Cancelar"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JTextField" name="jTxtMhcComplemento">
+    </Component>
+    <Component class="javax.swing.JButton" name="jBtnPesquisar">
+      <Properties>
+        <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+          <Image iconType="3" name="/imagens/pesquisar.png"/>
+        </Property>
+        <Property name="text" type="java.lang.String" value="Pesquisar"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JLabel" name="jLblNivel">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="CEP"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JLabel" name="jLabel8">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="N&#xfa;mero"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JTextField" name="jTxtMhcNumero">
+    </Component>
+    <Component class="javax.swing.JLabel" name="jLblEmail">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Email"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JLabel" name="jLabel9">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Cidade"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JTextField" name="jTxtEmail">
+    </Component>
+    <Component class="javax.swing.JTextField" name="jTextField1">
+    </Component>
+    <Component class="javax.swing.JLabel" name="jLblTelefone">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Telefone"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JLabel" name="jLabel10">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="UF"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JTextField" name="jTxtTelefone">
+    </Component>
+    <Component class="javax.swing.JTextField" name="jTxtMhcUF">
+    </Component>
+    <Component class="javax.swing.JLabel" name="jLabel1">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Contrato"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JLabel" name="jLblNome">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Raz&#xe3;o Social"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JTextField" name="jTxtRazaoSocial">
+    </Component>
+    <Component class="javax.swing.JLabel" name="jLblApelido">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Nome Comercial"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JTextField" name="jTxtMhcNomeComercial">
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jTxtMhcNomeComercialActionPerformed"/>
+      </Events>
+    </Component>
+    <Component class="javax.swing.JLabel" name="jLblCpf">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="CNPJ"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JFormattedTextField" name="jFmtMhcCNPJ">
+    </Component>
+    <Component class="javax.swing.JLabel" name="jLblDataNasc">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Site"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JTextField" name="jTxtMhcSite">
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jTxtMhcSiteActionPerformed"/>
+      </Events>
+    </Component>
+    <Component class="javax.swing.JLabel" name="jLabel3">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Bairro"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JTextField" name="jTxtDataCadastro">
+    </Component>
+    <Component class="javax.swing.JButton" name="jBtnIncluir">
+      <Properties>
+        <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+          <Image iconType="3" name="/imagens/incluir.png"/>
+        </Property>
+        <Property name="text" type="java.lang.String" value="Incluir"/>
+      </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jBtnIncluirActionPerformed"/>
+      </Events>
+    </Component>
+    <Component class="javax.swing.JButton" name="jBtnAlterar">
+      <Properties>
+        <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+          <Image iconType="3" name="/imagens/alterar.png"/>
+        </Property>
+        <Property name="text" type="java.lang.String" value="Alterar"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JTextField" name="jTxtMhcEndereco">
+    </Component>
+    <Component class="javax.swing.JButton" name="jBtnExcluir">
+      <Properties>
+        <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+          <Image iconType="3" name="/imagens/Excluir.png"/>
+        </Property>
+        <Property name="text" type="java.lang.String" value="Excluir"/>
+      </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jBtnExcluirActionPerformed"/>
+      </Events>
+    </Component>
+    <Component class="javax.swing.JTextField" name="jTxtMhcCEP">
+    </Component>
+    <Component class="javax.swing.JLabel" name="jLblSenha">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Endere&#xe7;o"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JTextField" name="jTxtMhcBairro">
+    </Component>
+  </SubComponents>
 </Form>

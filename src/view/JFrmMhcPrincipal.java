@@ -38,33 +38,56 @@ public class JFrmMhcPrincipal extends javax.swing.JFrame {
         jSeparator1 = new javax.swing.JPopupMenu.Separator();
         jMnuSair = new javax.swing.JMenuItem();
         jMenu2 = new javax.swing.JMenu();
+        jMenuItem1 = new javax.swing.JMenuItem();
+        jMenuItem2 = new javax.swing.JMenuItem();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
         jMenu1.setText("Cadastro");
 
+        jMnuUsuarios.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_U, java.awt.event.InputEvent.CTRL_DOWN_MASK));
+        jMnuUsuarios.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/usuario.png"))); // NOI18N
         jMnuUsuarios.setText("Usuários");
         jMenu1.add(jMnuUsuarios);
 
+        jMnuClientes.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_C, java.awt.event.InputEvent.CTRL_DOWN_MASK));
+        jMnuClientes.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/cliente.png"))); // NOI18N
         jMnuClientes.setText("Clientes");
         jMenu1.add(jMnuClientes);
 
+        jMnuFornecedor.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_F, java.awt.event.InputEvent.CTRL_DOWN_MASK));
+        jMnuFornecedor.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/fornecedor2.png"))); // NOI18N
         jMnuFornecedor.setText("Fornecedor");
         jMenu1.add(jMnuFornecedor);
 
+        jMnuProdutos.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_P, java.awt.event.InputEvent.CTRL_DOWN_MASK));
+        jMnuProdutos.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/produto.png"))); // NOI18N
         jMnuProdutos.setText("Produtos");
         jMenu1.add(jMnuProdutos);
 
+        jMnuLicencas.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_L, java.awt.event.InputEvent.CTRL_DOWN_MASK));
+        jMnuLicencas.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/licencas.png"))); // NOI18N
         jMnuLicencas.setText("Licenças");
         jMenu1.add(jMnuLicencas);
         jMenu1.add(jSeparator1);
 
+        jMnuSair.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_S, java.awt.event.InputEvent.CTRL_DOWN_MASK));
+        jMnuSair.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/Excluir.png"))); // NOI18N
         jMnuSair.setText("Sair");
         jMenu1.add(jMnuSair);
 
         jMenuBar1.add(jMenu1);
 
         jMenu2.setText("Movimento");
+
+        jMenuItem1.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_V, java.awt.event.InputEvent.CTRL_DOWN_MASK));
+        jMenuItem1.setText("Vendas");
+        jMenu2.add(jMenuItem1);
+
+        jMenuItem2.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_C, java.awt.event.InputEvent.ALT_DOWN_MASK | java.awt.event.InputEvent.CTRL_DOWN_MASK));
+        jMenuItem2.setText("Compras");
+        jMenu2.add(jMenuItem2);
+
         jMenuBar1.add(jMenu2);
 
         setJMenuBar(jMenuBar1);
@@ -112,6 +135,8 @@ public class JFrmMhcPrincipal extends javax.swing.JFrame {
     private javax.swing.JMenu jMenu1;
     private javax.swing.JMenu jMenu2;
     private javax.swing.JMenuBar jMenuBar1;
+    private javax.swing.JMenuItem jMenuItem1;
+    private javax.swing.JMenuItem jMenuItem2;
     private javax.swing.JMenuItem jMnuClientes;
     private javax.swing.JMenuItem jMnuFornecedor;
     private javax.swing.JMenuItem jMnuLicencas;
