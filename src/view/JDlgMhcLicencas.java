@@ -20,6 +20,56 @@ public class JDlgMhcLicencas extends javax.swing.JDialog {
         initComponents();
           setTitle("Sistema de Vendas de Camisas de Time - Licenças");
         setLocationRelativeTo(null);
+         jTxtMhcCodigoLicenca.setEnabled(false);
+        jTxtMhcContato.setEnabled(false);
+        jTxtMhcDataAssinatura.setEnabled(false);
+        jTxtMhcEntidade.setEnabled(false);
+        jTxtMhcFimLicenca.setEnabled(false);
+        jTxtMhcObservacoes.setEnabled(false);
+        jTxtMhcSituacao.setEnabled(false);
+        jTxtMhcTipo.setEnabled(false);
+        jTxtMhcValorContrato.setEnabled(false);
+        jBtnCancelar.setEnabled(false);
+        jBtnConfirmar.setEnabled(false);
+        jBtnAlterar.setEnabled(true);
+        jBtnExcluir.setEnabled(true);
+        jBtnIncluir.setEnabled(true);
+        jBtnPesquisar.setEnabled(true);
+    }
+     public void habilitar(){
+           jTxtMhcCodigoLicenca.setEnabled(true);
+        jTxtMhcContato.setEnabled(true);
+        jTxtMhcDataAssinatura.setEnabled(true);
+        jTxtMhcEntidade.setEnabled(true);
+        jTxtMhcFimLicenca.setEnabled(true);
+        jTxtMhcObservacoes.setEnabled(true);
+        jTxtMhcSituacao.setEnabled(true);
+        jTxtMhcTipo.setEnabled(true);
+        jTxtMhcValorContrato.setEnabled(true);
+        jBtnCancelar.setEnabled(true);
+        jBtnConfirmar.setEnabled(true);
+        jBtnAlterar.setEnabled(false);
+        jBtnExcluir.setEnabled(false);
+        jBtnIncluir.setEnabled(false);
+        jBtnPesquisar.setEnabled(false);
+     }
+     
+    public void desabilitar(){
+          jTxtMhcCodigoLicenca.setEnabled(false);
+        jTxtMhcContato.setEnabled(false);
+        jTxtMhcDataAssinatura.setEnabled(false);
+        jTxtMhcEntidade.setEnabled(false);
+        jTxtMhcFimLicenca.setEnabled(false);
+        jTxtMhcObservacoes.setEnabled(false);
+        jTxtMhcSituacao.setEnabled(false);
+        jTxtMhcTipo.setEnabled(false);
+        jTxtMhcValorContrato.setEnabled(false);
+        jBtnCancelar.setEnabled(false);
+        jBtnConfirmar.setEnabled(false);
+        jBtnAlterar.setEnabled(true);
+        jBtnExcluir.setEnabled(true);
+        jBtnIncluir.setEnabled(true);
+        jBtnPesquisar.setEnabled(true);
     }
 
     /**
@@ -83,9 +133,11 @@ public class JDlgMhcLicencas extends javax.swing.JDialog {
 
         jBtnConfirmar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/confirmar.png"))); // NOI18N
         jBtnConfirmar.setText("Confirmar");
+        jBtnConfirmar.addActionListener(this::jBtnConfirmarActionPerformed);
 
         jBtnCancelar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/cancelar.png"))); // NOI18N
         jBtnCancelar.setText("Cancelar");
+        jBtnCancelar.addActionListener(this::jBtnCancelarActionPerformed);
 
         jBtnPesquisar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/pesquisar.png"))); // NOI18N
         jBtnPesquisar.setText("Pesquisar");
@@ -172,16 +224,18 @@ public class JDlgMhcLicencas extends javax.swing.JDialog {
                     .addComponent(jLblNome)
                     .addComponent(jLabel3))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(jTxtMhcCodigoLicenca, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jTxtMhcEntidade, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jTxtMhcTipo, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                        .addComponent(jTxtMhcEntidade, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(jTxtMhcTipo, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLblDataNasc)
-                    .addComponent(jLabel9, javax.swing.GroupLayout.PREFERRED_SIZE, 16, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel10)
-                    .addComponent(jLblSenha))
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jLabel9, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 16, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                        .addComponent(jLblDataNasc)
+                        .addComponent(jLabel10)
+                        .addComponent(jLblSenha)))
                 .addGap(5, 5, 5)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jTxtMhcFimLicenca, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -216,17 +270,28 @@ public class JDlgMhcLicencas extends javax.swing.JDialog {
 
     private void jBtnIncluirActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBtnIncluirActionPerformed
         // TODO add your handling code here:
-      
+        habilitar();
     }//GEN-LAST:event_jBtnIncluirActionPerformed
 
     private void jBtnExcluirActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBtnExcluirActionPerformed
         // TODO add your handling code here:
+        desabilitar();
      
     }//GEN-LAST:event_jBtnExcluirActionPerformed
 
     private void jTxtMhcEntidadeActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTxtMhcEntidadeActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_jTxtMhcEntidadeActionPerformed
+
+    private void jBtnConfirmarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBtnConfirmarActionPerformed
+        // TODO add your handling code here:
+        habilitar();
+    }//GEN-LAST:event_jBtnConfirmarActionPerformed
+
+    private void jBtnCancelarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBtnCancelarActionPerformed
+        // TODO add your handling code here:
+        habilitar();
+    }//GEN-LAST:event_jBtnCancelarActionPerformed
 
     /**
      * @param args the command line arguments
