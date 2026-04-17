@@ -20,6 +20,68 @@ public class JDlgMhcUsuarios extends javax.swing.JDialog {
         initComponents();
         setTitle("Sistema de Vendas de Camisas de Time - Usuário");
         setLocationRelativeTo(null);
+          jTxtAcessos.setEnabled(false);
+        jTxtApelido.setEnabled(false);
+        jTxtDataCadastro.setEnabled(false);
+        jTxtDataNasc.setEnabled(false);
+        jTxtEmail.setEnabled(false);
+        jTxtHoraCadastro.setEnabled(false);
+        jTxtId.setEnabled(false);
+        jTxtNome.setEnabled(false);
+        jTxtTelefone.setEnabled(false);
+        jCboCargo.setEnabled(false);
+        jCboGenero.setEnabled(false);
+        jCboNivel.setEnabled(false);
+        jChbAtivo.setEnabled(false);
+        jBtnCancelar.setEnabled(false);
+        jBtnConfirmar.setEnabled(false);
+        jBtnAlterar.setEnabled(true);
+        jBtnExcluir.setEnabled(true);
+        jBtnIncluir.setEnabled(true);
+        jBtnPesquisar.setEnabled(true);
+    }
+    
+    public void habilitar(){
+          jTxtAcessos.setEnabled(true);
+        jTxtApelido.setEnabled(true);
+        jTxtDataCadastro.setEnabled(true);
+        jTxtDataNasc.setEnabled(true);
+        jTxtEmail.setEnabled(true);
+        jTxtHoraCadastro.setEnabled(true);
+        jTxtId.setEnabled(true);
+        jTxtNome.setEnabled(true);
+        jTxtTelefone.setEnabled(true);
+        jCboCargo.setEnabled(true);
+        jCboGenero.setEnabled(true);
+        jCboNivel.setEnabled(true);
+        jChbAtivo.setEnabled(true);
+        jBtnCancelar.setEnabled(true);
+        jBtnConfirmar.setEnabled(true); 
+         jBtnAlterar.setEnabled(false);
+        jBtnExcluir.setEnabled(false);
+        jBtnIncluir.setEnabled(false);
+        jBtnPesquisar.setEnabled(false);
+    }
+    public void desabilitar(){
+        jTxtAcessos.setEnabled(false);
+        jTxtApelido.setEnabled(false);
+        jTxtDataCadastro.setEnabled(false);
+        jTxtDataNasc.setEnabled(false);
+        jTxtEmail.setEnabled(false);
+        jTxtHoraCadastro.setEnabled(false);
+        jTxtId.setEnabled(false);
+        jTxtNome.setEnabled(false);
+        jTxtTelefone.setEnabled(false);
+        jCboCargo.setEnabled(false);
+        jCboGenero.setEnabled(false);
+        jCboNivel.setEnabled(false);
+        jChbAtivo.setEnabled(false);
+        jBtnCancelar.setEnabled(false);
+        jBtnConfirmar.setEnabled(false);
+        jBtnAlterar.setEnabled(true);
+        jBtnExcluir.setEnabled(true);
+        jBtnIncluir.setEnabled(true);
+        jBtnPesquisar.setEnabled(true); 
     }
 
     /**
@@ -122,9 +184,11 @@ public class JDlgMhcUsuarios extends javax.swing.JDialog {
 
         jBtnConfirmar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/confirmar.png"))); // NOI18N
         jBtnConfirmar.setText("Confirmar");
+        jBtnConfirmar.addActionListener(this::jBtnConfirmarActionPerformed);
 
         jBtnCancelar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/cancelar.png"))); // NOI18N
         jBtnCancelar.setText("Cancelar");
+        jBtnCancelar.addActionListener(this::jBtnCancelarActionPerformed);
 
         jBtnPesquisar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/pesquisar.png"))); // NOI18N
         jBtnPesquisar.setText("Pesquisar");
@@ -298,53 +362,23 @@ public class JDlgMhcUsuarios extends javax.swing.JDialog {
 
     private void jBtnIncluirActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBtnIncluirActionPerformed
         // TODO add your handling code here:
-         jTxtNome.setEnabled(true);
-         jTxtApelido.setEnabled(true);
-         jTxtAcessos.setEnabled(true);
-         jTxtDataCadastro.setEnabled(true);
-         jTxtHoraCadastro.setEnabled(true);
-         jTxtDataNasc.setEnabled(true);
-         jTxtId.setEnabled(true);
-         jFmtCpf.setEnabled(true);
-         jTxtEmail.setEnabled(true);
-         jTxtTelefone.setEnabled(true);
-         jPwfSenha.setEnabled(true);
-         jCboNivel.setEnabled(true);
-         jChbAtivo.setEnabled(true);
-         jCboGenero.setEnabled(true);
-         jCboCargo.setEnabled(true);
-         jBtnAlterar.setEnabled(true);
-         jBtnCancelar.setEnabled(false);
-         jBtnConfirmar.setEnabled(false);
-         jBtnExcluir.setEnabled(true);
-         jBtnIncluir.setEnabled(false);
-         jBtnPesquisar.setEnabled(true);
+         habilitar();
     }//GEN-LAST:event_jBtnIncluirActionPerformed
 
     private void jBtnExcluirActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBtnExcluirActionPerformed
         // TODO add your handling code here:
-            jTxtNome.setEnabled(false);
-         jTxtApelido.setEnabled(false);
-         jTxtAcessos.setEnabled(false);
-         jTxtDataCadastro.setEnabled(false);
-         jTxtHoraCadastro.setEnabled(false);
-         jTxtDataNasc.setEnabled(false);
-         jTxtId.setEnabled(false);
-         jFmtCpf.setEnabled(false);
-         jTxtEmail.setEnabled(false);
-         jTxtTelefone.setEnabled(false);
-         jPwfSenha.setEnabled(false);
-         jCboNivel.setEnabled(false);
-         jChbAtivo.setEnabled(false);
-         jCboGenero.setEnabled(false);
-         jCboCargo.setEnabled(false);
-         jBtnAlterar.setEnabled(false);
-         jBtnCancelar.setEnabled(true);
-         jBtnConfirmar.setEnabled(true);
-         jBtnExcluir.setEnabled(false);
-         jBtnIncluir.setEnabled(true);
-         jBtnPesquisar.setEnabled(false);
+            desabilitar();
     }//GEN-LAST:event_jBtnExcluirActionPerformed
+
+    private void jBtnConfirmarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBtnConfirmarActionPerformed
+        // TODO add your handling code here:
+        habilitar();
+    }//GEN-LAST:event_jBtnConfirmarActionPerformed
+
+    private void jBtnCancelarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBtnCancelarActionPerformed
+        // TODO add your handling code here:
+        habilitar();
+    }//GEN-LAST:event_jBtnCancelarActionPerformed
 
     /**
      * @param args the command line arguments
