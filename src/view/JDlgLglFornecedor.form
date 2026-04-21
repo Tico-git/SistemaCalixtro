@@ -32,7 +32,7 @@
                   <Group type="102" alignment="1" attributes="0">
                       <Group type="103" groupAlignment="0" attributes="0">
                           <Group type="103" alignment="0" groupAlignment="1" max="-2" attributes="0">
-                              <Component id="jTxtDataCadastro" alignment="1" pref="194" max="32767" attributes="0"/>
+                              <Component id="jTxtContrato" alignment="1" pref="194" max="32767" attributes="0"/>
                               <Component id="jLblEmail" alignment="0" min="-2" pref="37" max="-2" attributes="0"/>
                               <Component id="jTxtEmail" alignment="1" max="32767" attributes="0"/>
                           </Group>
@@ -52,7 +52,7 @@
                           </Group>
                           <Group type="102" attributes="0">
                               <Group type="103" groupAlignment="0" attributes="0">
-                                  <Component id="jTxtMhcUF" min="-2" pref="33" max="-2" attributes="0"/>
+                                  <Component id="jTxtLglUF" min="-2" pref="33" max="-2" attributes="0"/>
                                   <Component id="jLabel10" min="-2" pref="43" max="-2" attributes="0"/>
                               </Group>
                               <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
@@ -61,24 +61,29 @@
                   </Group>
                   <Group type="102" alignment="0" attributes="0">
                       <Group type="103" groupAlignment="0" attributes="0">
-                          <Component id="jTxtMhcSite" alignment="0" min="-2" pref="187" max="-2" attributes="0"/>
+                          <Component id="jTxtLglSite" alignment="0" min="-2" pref="187" max="-2" attributes="0"/>
                           <Component id="jLblDataNasc" alignment="0" min="-2" pref="112" max="-2" attributes="0"/>
                       </Group>
                       <EmptySpace max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="0" attributes="0">
-                          <Group type="102" alignment="0" attributes="0">
-                              <Component id="jLabel9" min="-2" max="-2" attributes="0"/>
-                              <EmptySpace min="33" max="32767" attributes="0"/>
-                          </Group>
-                          <Group type="102" alignment="0" attributes="0">
-                              <Component id="jTxtMhcCidade" min="-2" pref="201" max="-2" attributes="0"/>
-                              <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
-                          </Group>
+                          <Component id="jLabel9" alignment="0" min="-2" max="-2" attributes="0"/>
+                          <Component id="jTxtLglCidade" alignment="0" min="-2" pref="201" max="-2" attributes="0"/>
                       </Group>
-                      <EmptySpace min="-2" pref="478" max="-2" attributes="0"/>
+                      <EmptySpace min="478" max="32767" attributes="0"/>
                   </Group>
                   <Group type="102" alignment="0" attributes="0">
-                      <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                      <Component id="jTxtLglEndereco" min="-2" pref="252" max="-2" attributes="0"/>
+                      <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                      <Component id="jTxtLglCEP" min="-2" pref="100" max="-2" attributes="0"/>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Component id="jTxtLglBairro" min="-2" pref="170" max="-2" attributes="0"/>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Component id="jTxtLglComplemento" min="-2" pref="151" max="-2" attributes="0"/>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Component id="jTxtLglNumero" max="32767" attributes="0"/>
+                  </Group>
+                  <Group type="102" attributes="0">
+                      <Group type="103" groupAlignment="0" attributes="0">
                           <Group type="102" alignment="0" attributes="0">
                               <Component id="jBtnIncluir" min="-2" max="-2" attributes="0"/>
                               <EmptySpace max="-2" attributes="0"/>
@@ -96,7 +101,7 @@
                                   <Group type="102" attributes="0">
                                       <Component id="jTxtRazaoSocial" min="-2" pref="299" max="-2" attributes="0"/>
                                       <EmptySpace type="separate" max="-2" attributes="0"/>
-                                      <Component id="jTxtMhcNomeComercial" min="-2" pref="322" max="-2" attributes="0"/>
+                                      <Component id="jTxtLglNomeComercial" min="-2" pref="322" max="-2" attributes="0"/>
                                   </Group>
                                   <Group type="102" attributes="0">
                                       <Component id="jLblNome" min="-2" max="-2" attributes="0"/>
@@ -107,10 +112,7 @@
                               <EmptySpace max="-2" attributes="0"/>
                               <Group type="103" groupAlignment="0" attributes="0">
                                   <Component id="jLblCpf" alignment="0" min="-2" max="-2" attributes="0"/>
-                                  <Group type="102" alignment="0" attributes="0">
-                                      <Component id="jFmtMhcCNPJ" min="-2" pref="221" max="-2" attributes="0"/>
-                                      <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
-                                  </Group>
+                                  <Component id="jFmtLglCNPJ" alignment="0" min="-2" pref="221" max="-2" attributes="0"/>
                               </Group>
                           </Group>
                           <Group type="102" alignment="0" attributes="0">
@@ -123,17 +125,6 @@
                               <Component id="jLabel7" min="-2" max="-2" attributes="0"/>
                               <EmptySpace min="-2" pref="82" max="-2" attributes="0"/>
                               <Component id="jLabel8" min="-2" max="-2" attributes="0"/>
-                          </Group>
-                          <Group type="102" alignment="0" attributes="0">
-                              <Component id="jTxtMhcEndereco" min="-2" pref="252" max="-2" attributes="0"/>
-                              <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                              <Component id="jTxtMhcCEP" min="-2" pref="100" max="-2" attributes="0"/>
-                              <EmptySpace max="-2" attributes="0"/>
-                              <Component id="jTxtMhcBairro" min="-2" pref="170" max="-2" attributes="0"/>
-                              <EmptySpace max="-2" attributes="0"/>
-                              <Component id="jTxtMhcComplemento" min="-2" pref="151" max="-2" attributes="0"/>
-                              <EmptySpace max="-2" attributes="0"/>
-                              <Component id="jTxtMhcNumero" max="32767" attributes="0"/>
                           </Group>
                       </Group>
                       <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
@@ -156,8 +147,8 @@
               <Group type="103" groupAlignment="0" attributes="0">
                   <Component id="jTxtRazaoSocial" alignment="0" min="-2" max="-2" attributes="0"/>
                   <Group type="103" alignment="0" groupAlignment="3" attributes="0">
-                      <Component id="jTxtMhcNomeComercial" alignment="3" min="-2" max="-2" attributes="0"/>
-                      <Component id="jFmtMhcCNPJ" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="jTxtLglNomeComercial" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="jFmtLglCNPJ" alignment="3" min="-2" max="-2" attributes="0"/>
                   </Group>
               </Group>
               <EmptySpace max="-2" attributes="0"/>
@@ -167,8 +158,8 @@
               </Group>
               <EmptySpace min="-2" pref="5" max="-2" attributes="0"/>
               <Group type="103" groupAlignment="3" attributes="0">
-                  <Component id="jTxtMhcSite" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="jTxtMhcCidade" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="jTxtLglSite" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="jTxtLglCidade" alignment="3" min="-2" max="-2" attributes="0"/>
               </Group>
               <EmptySpace max="-2" attributes="0"/>
               <Group type="103" groupAlignment="3" attributes="0">
@@ -180,11 +171,11 @@
               </Group>
               <EmptySpace max="-2" attributes="0"/>
               <Group type="103" groupAlignment="3" attributes="0">
-                  <Component id="jTxtMhcEndereco" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="jTxtMhcCEP" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="jTxtMhcBairro" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="jTxtMhcComplemento" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="jTxtMhcNumero" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="jTxtLglEndereco" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="jTxtLglCEP" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="jTxtLglBairro" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="jTxtLglComplemento" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="jTxtLglNumero" alignment="3" min="-2" max="-2" attributes="0"/>
               </Group>
               <EmptySpace max="-2" attributes="0"/>
               <Group type="103" groupAlignment="3" attributes="0">
@@ -201,7 +192,7 @@
                       <EmptySpace min="-2" pref="15" max="-2" attributes="0"/>
                       <Component id="jLabel10" min="-2" max="-2" attributes="0"/>
                       <EmptySpace max="-2" attributes="0"/>
-                      <Component id="jTxtMhcUF" min="-2" max="-2" attributes="0"/>
+                      <Component id="jTxtLglUF" min="-2" max="-2" attributes="0"/>
                       <EmptySpace min="-2" pref="25" max="-2" attributes="0"/>
                       <Component id="jBtnPesquisar" min="-2" max="-2" attributes="0"/>
                   </Group>
@@ -209,7 +200,7 @@
                       <EmptySpace type="unrelated" max="-2" attributes="0"/>
                       <Component id="jLabel1" min="-2" max="-2" attributes="0"/>
                       <EmptySpace max="-2" attributes="0"/>
-                      <Component id="jTxtDataCadastro" min="-2" max="-2" attributes="0"/>
+                      <Component id="jTxtContrato" min="-2" max="-2" attributes="0"/>
                   </Group>
               </Group>
               <EmptySpace type="unrelated" max="-2" attributes="0"/>
@@ -253,7 +244,7 @@
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jBtnCancelarActionPerformed"/>
       </Events>
     </Component>
-    <Component class="javax.swing.JTextField" name="jTxtMhcComplemento">
+    <Component class="javax.swing.JTextField" name="jTxtLglComplemento">
     </Component>
     <Component class="javax.swing.JButton" name="jBtnPesquisar">
       <Properties>
@@ -273,7 +264,7 @@
         <Property name="text" type="java.lang.String" value="N&#xfa;mero"/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JTextField" name="jTxtMhcNumero">
+    <Component class="javax.swing.JTextField" name="jTxtLglNumero">
     </Component>
     <Component class="javax.swing.JLabel" name="jLblEmail">
       <Properties>
@@ -287,7 +278,7 @@
     </Component>
     <Component class="javax.swing.JTextField" name="jTxtEmail">
     </Component>
-    <Component class="javax.swing.JTextField" name="jTxtMhcCidade">
+    <Component class="javax.swing.JTextField" name="jTxtLglCidade">
     </Component>
     <Component class="javax.swing.JLabel" name="jLblTelefone">
       <Properties>
@@ -301,7 +292,7 @@
     </Component>
     <Component class="javax.swing.JTextField" name="jTxtTelefone">
     </Component>
-    <Component class="javax.swing.JTextField" name="jTxtMhcUF">
+    <Component class="javax.swing.JTextField" name="jTxtLglUF">
     </Component>
     <Component class="javax.swing.JLabel" name="jLabel1">
       <Properties>
@@ -320,9 +311,9 @@
         <Property name="text" type="java.lang.String" value="Nome Comercial"/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JTextField" name="jTxtMhcNomeComercial">
+    <Component class="javax.swing.JTextField" name="jTxtLglNomeComercial">
       <Events>
-        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jTxtMhcNomeComercialActionPerformed"/>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jTxtLglNomeComercialActionPerformed"/>
       </Events>
     </Component>
     <Component class="javax.swing.JLabel" name="jLblCpf">
@@ -330,16 +321,16 @@
         <Property name="text" type="java.lang.String" value="CNPJ"/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JFormattedTextField" name="jFmtMhcCNPJ">
+    <Component class="javax.swing.JFormattedTextField" name="jFmtLglCNPJ">
     </Component>
     <Component class="javax.swing.JLabel" name="jLblDataNasc">
       <Properties>
         <Property name="text" type="java.lang.String" value="Site"/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JTextField" name="jTxtMhcSite">
+    <Component class="javax.swing.JTextField" name="jTxtLglSite">
       <Events>
-        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jTxtMhcSiteActionPerformed"/>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jTxtLglSiteActionPerformed"/>
       </Events>
     </Component>
     <Component class="javax.swing.JLabel" name="jLabel3">
@@ -347,7 +338,7 @@
         <Property name="text" type="java.lang.String" value="Bairro"/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JTextField" name="jTxtDataCadastro">
+    <Component class="javax.swing.JTextField" name="jTxtContrato">
     </Component>
     <Component class="javax.swing.JButton" name="jBtnIncluir">
       <Properties>
@@ -368,7 +359,7 @@
         <Property name="text" type="java.lang.String" value="Alterar"/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JTextField" name="jTxtMhcEndereco">
+    <Component class="javax.swing.JTextField" name="jTxtLglEndereco">
     </Component>
     <Component class="javax.swing.JButton" name="jBtnExcluir">
       <Properties>
@@ -381,14 +372,14 @@
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jBtnExcluirActionPerformed"/>
       </Events>
     </Component>
-    <Component class="javax.swing.JTextField" name="jTxtMhcCEP">
+    <Component class="javax.swing.JTextField" name="jTxtLglCEP">
     </Component>
     <Component class="javax.swing.JLabel" name="jLblSenha">
       <Properties>
         <Property name="text" type="java.lang.String" value="Endere&#xe7;o"/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JTextField" name="jTxtMhcBairro">
+    <Component class="javax.swing.JTextField" name="jTxtLglBairro">
     </Component>
   </SubComponents>
 </Form>

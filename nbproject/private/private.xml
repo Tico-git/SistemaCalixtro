@@ -3,12 +3,11 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/C:/Users/mhscm/OneDrive/Documentos/NetBeansProjects/SistemaCalixtro/src/sistemacalixtro/SistemaCalixtro.java</file>
-            <file>file:/C:/Users/mhscm/OneDrive/Documentos/NetBeansProjects/SistemaCalixtro/src/view/JFrmMhcPrincipal.java</file>
-            <file>file:/C:/Users/mhscm/OneDrive/Documentos/NetBeansProjects/SistemaCalixtro/src/view/JDlgMhcUsuarios.java</file>
-            <file>file:/C:/Users/mhscm/OneDrive/Documentos/NetBeansProjects/SistemaCalixtro/src/view/JDlgMhcClientes.java</file>
-            <file>file:/C:/Users/mhscm/OneDrive/Documentos/NetBeansProjects/SistemaCalixtro/src/view/JDlgMhcProdutos.java</file>
-            <file>file:/C:/Users/mhscm/OneDrive/Documentos/NetBeansProjects/SistemaCalixtro/src/view/JDlgMhcLicencas.java</file>
+            <file>file:/C:/Users/mhscm/OneDrive/Documentos/NetBeansProjects/SistemaCalixtro/src/view/JFrmLglPrincipal.java</file>
+            <file>file:/C:/Users/mhscm/OneDrive/Documentos/NetBeansProjects/SistemaCalixtro/src/view/JDlgLglFornecedor.java</file>
+            <file>file:/C:/Users/mhscm/OneDrive/Documentos/NetBeansProjects/SistemaCalixtro/src/view/JDlgLglClientes.java</file>
+            <file>file:/C:/Users/mhscm/OneDrive/Documentos/NetBeansProjects/SistemaCalixtro/src/view/JDlgLglProdutos.java</file>
+            <file>file:/C:/Users/mhscm/OneDrive/Documentos/NetBeansProjects/SistemaCalixtro/src/view/JDlgLglUsuarios.java</file>
         </group>
     </open-files>
 </project-private>

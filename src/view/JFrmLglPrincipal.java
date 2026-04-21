@@ -8,16 +8,16 @@ package view;
  *
  * @author mhscm
  */
-public class JFrmMhcPrincipal extends javax.swing.JFrame {
+public class JFrmLglPrincipal extends javax.swing.JFrame {
     
-    private static final java.util.logging.Logger logger = java.util.logging.Logger.getLogger(JFrmMhcPrincipal.class.getName());
+    private static final java.util.logging.Logger logger = java.util.logging.Logger.getLogger(JFrmLglPrincipal.class.getName());
 
     /**
      * Creates new form JFrmMhcPrincipal
      */
-    public JFrmMhcPrincipal() {
+    public JFrmLglPrincipal() {
         initComponents();
-        setTitle("Sistema de Vendas de Camisas de Time - Inicio");
+        setTitle("Mecânica Lino - Inicio");
         setExtendedState(MAXIMIZED_BOTH);
     }
 
@@ -31,71 +31,73 @@ public class JFrmMhcPrincipal extends javax.swing.JFrame {
     private void initComponents() {
 
         jMenuBar1 = new javax.swing.JMenuBar();
-        jMenu1 = new javax.swing.JMenu();
+        jMnuCadastro = new javax.swing.JMenu();
         jMnuUsuarios = new javax.swing.JMenuItem();
         jMnuClientes = new javax.swing.JMenuItem();
         jMnuFornecedor = new javax.swing.JMenuItem();
         jMnuProdutos = new javax.swing.JMenuItem();
-        jMnuLicencas = new javax.swing.JMenuItem();
+        jMnuVeiculos = new javax.swing.JMenuItem();
         jSeparator1 = new javax.swing.JPopupMenu.Separator();
         jMnuSair = new javax.swing.JMenuItem();
-        jMenu2 = new javax.swing.JMenu();
+        jMnuMovimento = new javax.swing.JMenu();
         jMenuItem1 = new javax.swing.JMenuItem();
         jMenuItem2 = new javax.swing.JMenuItem();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
-        jMenu1.setText("Cadastro");
+        jMnuCadastro.setMnemonic('c');
+        jMnuCadastro.setText("Cadastro");
 
         jMnuUsuarios.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_U, java.awt.event.InputEvent.CTRL_DOWN_MASK));
         jMnuUsuarios.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/usuario.png"))); // NOI18N
         jMnuUsuarios.setText("Usuários");
         jMnuUsuarios.addActionListener(this::jMnuUsuariosActionPerformed);
-        jMenu1.add(jMnuUsuarios);
+        jMnuCadastro.add(jMnuUsuarios);
 
         jMnuClientes.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_C, java.awt.event.InputEvent.CTRL_DOWN_MASK));
         jMnuClientes.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/cliente.png"))); // NOI18N
         jMnuClientes.setText("Clientes");
         jMnuClientes.addActionListener(this::jMnuClientesActionPerformed);
-        jMenu1.add(jMnuClientes);
+        jMnuCadastro.add(jMnuClientes);
 
         jMnuFornecedor.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_F, java.awt.event.InputEvent.CTRL_DOWN_MASK));
         jMnuFornecedor.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/fornecedor2.png"))); // NOI18N
         jMnuFornecedor.setText("Fornecedor");
         jMnuFornecedor.addActionListener(this::jMnuFornecedorActionPerformed);
-        jMenu1.add(jMnuFornecedor);
+        jMnuCadastro.add(jMnuFornecedor);
 
         jMnuProdutos.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_P, java.awt.event.InputEvent.CTRL_DOWN_MASK));
         jMnuProdutos.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/produto.png"))); // NOI18N
         jMnuProdutos.setText("Produtos");
         jMnuProdutos.addActionListener(this::jMnuProdutosActionPerformed);
-        jMenu1.add(jMnuProdutos);
+        jMnuCadastro.add(jMnuProdutos);
 
-        jMnuLicencas.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_L, java.awt.event.InputEvent.CTRL_DOWN_MASK));
-        jMnuLicencas.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/licencas.png"))); // NOI18N
-        jMnuLicencas.setText("Licenças");
-        jMnuLicencas.addActionListener(this::jMnuLicencasActionPerformed);
-        jMenu1.add(jMnuLicencas);
-        jMenu1.add(jSeparator1);
+        jMnuVeiculos.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_V, java.awt.event.InputEvent.ALT_DOWN_MASK | java.awt.event.InputEvent.CTRL_DOWN_MASK));
+        jMnuVeiculos.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/veiculos.png"))); // NOI18N
+        jMnuVeiculos.setText("Veiculos");
+        jMnuVeiculos.addActionListener(this::jMnuVeiculosActionPerformed);
+        jMnuCadastro.add(jMnuVeiculos);
+        jMnuCadastro.add(jSeparator1);
 
         jMnuSair.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_S, java.awt.event.InputEvent.CTRL_DOWN_MASK));
         jMnuSair.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/Excluir.png"))); // NOI18N
         jMnuSair.setText("Sair");
-        jMenu1.add(jMnuSair);
+        jMnuCadastro.add(jMnuSair);
 
-        jMenuBar1.add(jMenu1);
+        jMenuBar1.add(jMnuCadastro);
 
-        jMenu2.setText("Movimento");
+        jMnuMovimento.setMnemonic('m');
+        jMnuMovimento.setText("Movimento");
 
         jMenuItem1.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_V, java.awt.event.InputEvent.CTRL_DOWN_MASK));
         jMenuItem1.setText("Vendas");
-        jMenu2.add(jMenuItem1);
+        jMnuMovimento.add(jMenuItem1);
 
         jMenuItem2.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_C, java.awt.event.InputEvent.ALT_DOWN_MASK | java.awt.event.InputEvent.CTRL_DOWN_MASK));
         jMenuItem2.setText("Compras");
-        jMenu2.add(jMenuItem2);
+        jMnuMovimento.add(jMenuItem2);
 
-        jMenuBar1.add(jMenu2);
+        jMenuBar1.add(jMnuMovimento);
 
         setJMenuBar(jMenuBar1);
 
@@ -115,33 +117,33 @@ public class JFrmMhcPrincipal extends javax.swing.JFrame {
 
     private void jMnuUsuariosActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMnuUsuariosActionPerformed
         // TODO add your handling code here:
-      JDlgMhcUsuarios dialog = new JDlgMhcUsuarios(this, true);
+      JDlgLglUsuarios dialog = new JDlgLglUsuarios(this, true);
 dialog.setVisible(true);
     }//GEN-LAST:event_jMnuUsuariosActionPerformed
 
     private void jMnuClientesActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMnuClientesActionPerformed
         // TODO add your handling code here:
-         JDlgMhcClientes dialog = new JDlgMhcClientes(this, true);
+         JDlgLglClientes dialog = new JDlgLglClientes(this, true);
 dialog.setVisible(true);
     }//GEN-LAST:event_jMnuClientesActionPerformed
 
     private void jMnuFornecedorActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMnuFornecedorActionPerformed
         // TODO add your handling code here:
-          JDlgMhcFornecedor dialog = new JDlgMhcFornecedor(this, true);
+          JDlgLglFornecedor dialog = new JDlgLglFornecedor(this, true);
 dialog.setVisible(true);
     }//GEN-LAST:event_jMnuFornecedorActionPerformed
 
     private void jMnuProdutosActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMnuProdutosActionPerformed
         // TODO add your handling code here:
-          JDlgMhcProdutos dialog = new JDlgMhcProdutos(this, true);
+          JDlgLglProdutos dialog = new JDlgLglProdutos(this, true);
 dialog.setVisible(true);
     }//GEN-LAST:event_jMnuProdutosActionPerformed
 
-    private void jMnuLicencasActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMnuLicencasActionPerformed
+    private void jMnuVeiculosActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMnuVeiculosActionPerformed
         // TODO add your handling code here:
-          JDlgMhcLicencas dialog = new JDlgMhcLicencas(this, true);
+          JDlgLglVeiculos dialog = new JDlgLglVeiculos(this, true);
 dialog.setVisible(true);
-    }//GEN-LAST:event_jMnuLicencasActionPerformed
+    }//GEN-LAST:event_jMnuVeiculosActionPerformed
 
     /**
      * @param args the command line arguments
@@ -165,21 +167,21 @@ dialog.setVisible(true);
         //</editor-fold>
 
         /* Create and display the form */
-        java.awt.EventQueue.invokeLater(() -> new JFrmMhcPrincipal().setVisible(true));
+        java.awt.EventQueue.invokeLater(() -> new JFrmLglPrincipal().setVisible(true));
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JMenu jMenu1;
-    private javax.swing.JMenu jMenu2;
     private javax.swing.JMenuBar jMenuBar1;
     private javax.swing.JMenuItem jMenuItem1;
     private javax.swing.JMenuItem jMenuItem2;
+    private javax.swing.JMenu jMnuCadastro;
     private javax.swing.JMenuItem jMnuClientes;
     private javax.swing.JMenuItem jMnuFornecedor;
-    private javax.swing.JMenuItem jMnuLicencas;
+    private javax.swing.JMenu jMnuMovimento;
     private javax.swing.JMenuItem jMnuProdutos;
     private javax.swing.JMenuItem jMnuSair;
     private javax.swing.JMenuItem jMnuUsuarios;
+    private javax.swing.JMenuItem jMnuVeiculos;
     private javax.swing.JPopupMenu.Separator jSeparator1;
     // End of variables declaration//GEN-END:variables
 }

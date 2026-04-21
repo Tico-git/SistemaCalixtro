@@ -8,17 +8,17 @@ package view;
  *
  * @author mhscm
  */
-public class JDlgMhcUsuarios extends javax.swing.JDialog {
+public class JDlgLglUsuarios extends javax.swing.JDialog {
     
-    private static final java.util.logging.Logger logger = java.util.logging.Logger.getLogger(JDlgMhcUsuarios.class.getName());
+    private static final java.util.logging.Logger logger = java.util.logging.Logger.getLogger(JDlgLglUsuarios.class.getName());
 
     /**
      * Creates new form JDlgMhcUsuarios
      */
-    public JDlgMhcUsuarios(java.awt.Frame parent, boolean modal) {
+    public JDlgLglUsuarios(java.awt.Frame parent, boolean modal) {
         super(parent, modal);
         initComponents();
-        setTitle("Sistema de Vendas de Camisas de Time - Usuário");
+        setTitle("Mecanica Lino - Usuários");
         setLocationRelativeTo(null);
           jTxtAcessos.setEnabled(false);
         jTxtApelido.setEnabled(false);
@@ -42,46 +42,47 @@ public class JDlgMhcUsuarios extends javax.swing.JDialog {
     }
     
     public void habilitar(){
-          jTxtAcessos.setEnabled(true);
-        jTxtApelido.setEnabled(true);
-        jTxtDataCadastro.setEnabled(true);
-        jTxtDataNasc.setEnabled(true);
-        jTxtEmail.setEnabled(true);
-        jTxtHoraCadastro.setEnabled(true);
-        jTxtId.setEnabled(true);
-        jTxtNome.setEnabled(true);
-        jTxtTelefone.setEnabled(true);
-        jCboCargo.setEnabled(true);
-        jCboGenero.setEnabled(true);
-        jCboNivel.setEnabled(true);
-        jChbAtivo.setEnabled(true);
-        jBtnCancelar.setEnabled(true);
-        jBtnConfirmar.setEnabled(true); 
-         jBtnAlterar.setEnabled(false);
-        jBtnExcluir.setEnabled(false);
-        jBtnIncluir.setEnabled(false);
-        jBtnPesquisar.setEnabled(false);
+        jTxtAcessos.setEnabled(true);
+    jTxtApelido.setEnabled(true);
+    jTxtDataCadastro.setEnabled(true);
+    jTxtDataNasc.setEnabled(true);
+    jTxtEmail.setEnabled(true);
+    jTxtHoraCadastro.setEnabled(true);
+    jTxtId.setEnabled(true);
+    jTxtNome.setEnabled(true);
+    jTxtTelefone.setEnabled(true);
+    jCboCargo.setEnabled(true);
+    jCboGenero.setEnabled(true);
+    jCboNivel.setEnabled(true);
+    jChbAtivo.setEnabled(true);
+    jBtnCancelar.setEnabled(true);
+    jBtnConfirmar.setEnabled(true);
+    jBtnAlterar.setEnabled(false);
+    jBtnExcluir.setEnabled(false);
+    jBtnIncluir.setEnabled(false);
+    jBtnPesquisar.setEnabled(false);
     }
+    
     public void desabilitar(){
         jTxtAcessos.setEnabled(false);
-        jTxtApelido.setEnabled(false);
-        jTxtDataCadastro.setEnabled(false);
-        jTxtDataNasc.setEnabled(false);
-        jTxtEmail.setEnabled(false);
-        jTxtHoraCadastro.setEnabled(false);
-        jTxtId.setEnabled(false);
-        jTxtNome.setEnabled(false);
-        jTxtTelefone.setEnabled(false);
-        jCboCargo.setEnabled(false);
-        jCboGenero.setEnabled(false);
-        jCboNivel.setEnabled(false);
-        jChbAtivo.setEnabled(false);
-        jBtnCancelar.setEnabled(false);
-        jBtnConfirmar.setEnabled(false);
-        jBtnAlterar.setEnabled(true);
-        jBtnExcluir.setEnabled(true);
-        jBtnIncluir.setEnabled(true);
-        jBtnPesquisar.setEnabled(true); 
+    jTxtApelido.setEnabled(false);
+    jTxtDataCadastro.setEnabled(false);
+    jTxtDataNasc.setEnabled(false);
+    jTxtEmail.setEnabled(false);
+    jTxtHoraCadastro.setEnabled(false);
+    jTxtId.setEnabled(false);
+    jTxtNome.setEnabled(false);
+    jTxtTelefone.setEnabled(false);
+    jCboCargo.setEnabled(false);
+    jCboGenero.setEnabled(false);
+    jCboNivel.setEnabled(false);
+    jChbAtivo.setEnabled(false);
+    jBtnCancelar.setEnabled(false);
+    jBtnConfirmar.setEnabled(false);
+    jBtnAlterar.setEnabled(true);
+    jBtnExcluir.setEnabled(true);
+    jBtnIncluir.setEnabled(true);
+    jBtnPesquisar.setEnabled(true);
     }
 
     /**
@@ -177,6 +178,7 @@ public class JDlgMhcUsuarios extends javax.swing.JDialog {
 
         jBtnAlterar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/alterar.png"))); // NOI18N
         jBtnAlterar.setText("Alterar");
+        jBtnAlterar.addActionListener(this::jBtnAlterarActionPerformed);
 
         jBtnExcluir.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/Excluir.png"))); // NOI18N
         jBtnExcluir.setText("Excluir");
@@ -380,6 +382,11 @@ public class JDlgMhcUsuarios extends javax.swing.JDialog {
         habilitar();
     }//GEN-LAST:event_jBtnCancelarActionPerformed
 
+    private void jBtnAlterarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBtnAlterarActionPerformed
+        // TODO add your handling code here:
+        desabilitar();
+    }//GEN-LAST:event_jBtnAlterarActionPerformed
+
     /**
      * @param args the command line arguments
      */
@@ -405,7 +412,7 @@ public class JDlgMhcUsuarios extends javax.swing.JDialog {
         java.awt.EventQueue.invokeLater(new Runnable() {
             @Override
             public void run() {
-                JDlgMhcUsuarios dialog = new JDlgMhcUsuarios(new javax.swing.JFrame(), true);
+                JDlgLglUsuarios dialog = new JDlgLglUsuarios(new javax.swing.JFrame(), true);
                 dialog.addWindowListener(new java.awt.event.WindowAdapter() {
                     @Override
                     public void windowClosing(java.awt.event.WindowEvent e) {
