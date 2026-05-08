@@ -8,14 +8,14 @@ package view;
  *
  * @author mhscm
  */
-public class JDlgLglUsuarios extends javax.swing.JDialog {
+public class JDlgMhcUsuarios extends javax.swing.JDialog {
     
-    private static final java.util.logging.Logger logger = java.util.logging.Logger.getLogger(JDlgLglUsuarios.class.getName());
+    private static final java.util.logging.Logger logger = java.util.logging.Logger.getLogger(JDlgMhcUsuarios.class.getName());
 
     /**
      * Creates new form JDlgMhcUsuarios
      */
-    public JDlgLglUsuarios(java.awt.Frame parent, boolean modal) {
+    public JDlgMhcUsuarios(java.awt.Frame parent, boolean modal) {
         super(parent, modal);
         initComponents();
         setTitle("Mecanica Lino - Usuários");
@@ -412,7 +412,7 @@ public class JDlgLglUsuarios extends javax.swing.JDialog {
         java.awt.EventQueue.invokeLater(new Runnable() {
             @Override
             public void run() {
-                JDlgLglUsuarios dialog = new JDlgLglUsuarios(new javax.swing.JFrame(), true);
+                JDlgMhcUsuarios dialog = new JDlgMhcUsuarios(new javax.swing.JFrame(), true);
                 dialog.addWindowListener(new java.awt.event.WindowAdapter() {
                     @Override
                     public void windowClosing(java.awt.event.WindowEvent e) {

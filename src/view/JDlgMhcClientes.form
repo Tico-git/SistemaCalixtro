@@ -90,9 +90,9 @@
                       <EmptySpace min="-2" pref="427" max="-2" attributes="0"/>
                   </Group>
                   <Group type="102" alignment="0" attributes="0">
-                      <Component id="jTxtLglEndereco" min="-2" pref="252" max="-2" attributes="0"/>
+                      <Component id="jTxtMhcEndereco" min="-2" pref="252" max="-2" attributes="0"/>
                       <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                      <Component id="jTxtLglCEP" min="-2" pref="100" max="-2" attributes="0"/>
+                      <Component id="jTxtMhcCEP" min="-2" pref="100" max="-2" attributes="0"/>
                       <EmptySpace max="-2" attributes="0"/>
                       <Component id="jTxtLglBairro" min="-2" pref="170" max="-2" attributes="0"/>
                       <EmptySpace max="-2" attributes="0"/>
@@ -193,8 +193,8 @@
               </Group>
               <EmptySpace max="-2" attributes="0"/>
               <Group type="103" groupAlignment="3" attributes="0">
-                  <Component id="jTxtLglEndereco" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="jTxtLglCEP" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="jTxtMhcEndereco" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="jTxtMhcCEP" alignment="3" min="-2" max="-2" attributes="0"/>
                   <Component id="jTxtLglBairro" alignment="3" min="-2" max="-2" attributes="0"/>
                   <Component id="jTxtLglComplemento" alignment="3" min="-2" max="-2" attributes="0"/>
                   <Component id="jTxtLglNumero" alignment="3" min="-2" max="-2" attributes="0"/>
@@ -377,9 +377,9 @@
         <Property name="text" type="java.lang.String" value="Hora do Cadastro"/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JTextField" name="jTxtLglEndereco">
+    <Component class="javax.swing.JTextField" name="jTxtMhcEndereco">
     </Component>
-    <Component class="javax.swing.JTextField" name="jTxtLglCEP">
+    <Component class="javax.swing.JTextField" name="jTxtMhcCEP">
     </Component>
     <Component class="javax.swing.JTextField" name="jTxtLglBairro">
     </Component>

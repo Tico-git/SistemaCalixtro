@@ -8,14 +8,14 @@ package view;
  *
  * @author mhscm
  */
-public class JDlgLglVeiculos extends javax.swing.JDialog {
+public class JDlgMhcVeiculos extends javax.swing.JDialog {
     
-    private static final java.util.logging.Logger logger = java.util.logging.Logger.getLogger(JDlgLglVeiculos.class.getName());
+    private static final java.util.logging.Logger logger = java.util.logging.Logger.getLogger(JDlgMhcVeiculos.class.getName());
 
     /**
      * Creates new form JDlgLglVeiculos
      */
-    public JDlgLglVeiculos(java.awt.Frame parent, boolean modal) {
+    public JDlgMhcVeiculos(java.awt.Frame parent, boolean modal) {
         super(parent, modal);
         initComponents();
          setTitle("Mecânica Lino - Veículos");
@@ -34,7 +34,7 @@ public class JDlgLglVeiculos extends javax.swing.JDialog {
         jBtnPesquisar.setEnabled(true);
     }
 public void habilitar(){
-    jTxtLglID.setEnabled(true);
+ jTxtLglID.setEnabled(true);
 jTxtLglCliente.setEnabled(true);
 jTxtLglCor.setEnabled(true);
 jTxtLglMarca.setEnabled(true);
@@ -267,7 +267,7 @@ jBtnPesquisar.setEnabled(true);
         java.awt.EventQueue.invokeLater(new Runnable() {
             @Override
             public void run() {
-                JDlgLglVeiculos dialog = new JDlgLglVeiculos(new javax.swing.JFrame(), true);
+                JDlgMhcVeiculos dialog = new JDlgMhcVeiculos(new javax.swing.JFrame(), true);
                 dialog.addWindowListener(new java.awt.event.WindowAdapter() {
                     @Override
                     public void windowClosing(java.awt.event.WindowEvent e) {

@@ -8,16 +8,16 @@ package view;
  *
  * @author mhscm
  */
-public class JDlgLglProdutos extends javax.swing.JDialog {
+public class JDlgMhcProdutos extends javax.swing.JDialog {
     
-    private static final java.util.logging.Logger logger = java.util.logging.Logger.getLogger(JDlgLglProdutos.class.getName());
+    private static final java.util.logging.Logger logger = java.util.logging.Logger.getLogger(JDlgMhcProdutos.class.getName());
 
     /**
      * Creates new form JDlgMhcProdutos
      * @param parent
      * @param modal
      */
-    public JDlgLglProdutos(java.awt.Frame parent, boolean modal) {
+    public JDlgMhcProdutos(java.awt.Frame parent, boolean modal) {
         super(parent, modal);
         initComponents();
         setTitle("Mecânica Lino - Produtos");
@@ -304,7 +304,7 @@ jBtnPesquisar.setEnabled(true);
         java.awt.EventQueue.invokeLater(new Runnable() {
             @Override
             public void run() {
-                JDlgLglProdutos dialog = new JDlgLglProdutos(new javax.swing.JFrame(), true);
+                JDlgMhcProdutos dialog = new JDlgMhcProdutos(new javax.swing.JFrame(), true);
                 dialog.addWindowListener(new java.awt.event.WindowAdapter() {
                     @Override
                     public void windowClosing(java.awt.event.WindowEvent e) {

@@ -8,14 +8,14 @@ package view;
  *
  * @author mhscm
  */
-public class JFrmLglPrincipal extends javax.swing.JFrame {
+public class JFrmMhcPrincipal extends javax.swing.JFrame {
     
-    private static final java.util.logging.Logger logger = java.util.logging.Logger.getLogger(JFrmLglPrincipal.class.getName());
+    private static final java.util.logging.Logger logger = java.util.logging.Logger.getLogger(JFrmMhcPrincipal.class.getName());
 
     /**
      * Creates new form JFrmMhcPrincipal
      */
-    public JFrmLglPrincipal() {
+    public JFrmMhcPrincipal() {
         initComponents();
         setTitle("Mecânica Lino - Inicio");
         setExtendedState(MAXIMIZED_BOTH);
@@ -117,31 +117,31 @@ public class JFrmLglPrincipal extends javax.swing.JFrame {
 
     private void jMnuUsuariosActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMnuUsuariosActionPerformed
         // TODO add your handling code here:
-      JDlgLglUsuarios dialog = new JDlgLglUsuarios(this, true);
+      JDlgMhcUsuarios dialog = new JDlgMhcUsuarios(this, true);
 dialog.setVisible(true);
     }//GEN-LAST:event_jMnuUsuariosActionPerformed
 
     private void jMnuClientesActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMnuClientesActionPerformed
         // TODO add your handling code here:
-         JDlgLglClientes dialog = new JDlgLglClientes(this, true);
+         JDlgMhcClientes dialog = new JDlgMhcClientes(this, true);
 dialog.setVisible(true);
     }//GEN-LAST:event_jMnuClientesActionPerformed
 
     private void jMnuFornecedorActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMnuFornecedorActionPerformed
         // TODO add your handling code here:
-          JDlgLglFornecedor dialog = new JDlgLglFornecedor(this, true);
+          JDlgMhcFornecedor dialog = new JDlgMhcFornecedor(this, true);
 dialog.setVisible(true);
     }//GEN-LAST:event_jMnuFornecedorActionPerformed
 
     private void jMnuProdutosActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMnuProdutosActionPerformed
         // TODO add your handling code here:
-          JDlgLglProdutos dialog = new JDlgLglProdutos(this, true);
+          JDlgMhcProdutos dialog = new JDlgMhcProdutos(this, true);
 dialog.setVisible(true);
     }//GEN-LAST:event_jMnuProdutosActionPerformed
 
     private void jMnuVeiculosActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMnuVeiculosActionPerformed
         // TODO add your handling code here:
-          JDlgLglVeiculos dialog = new JDlgLglVeiculos(this, true);
+          JDlgMhcVeiculos dialog = new JDlgMhcVeiculos(this, true);
 dialog.setVisible(true);
     }//GEN-LAST:event_jMnuVeiculosActionPerformed
 
@@ -167,7 +167,7 @@ dialog.setVisible(true);
         //</editor-fold>
 
         /* Create and display the form */
-        java.awt.EventQueue.invokeLater(() -> new JFrmLglPrincipal().setVisible(true));
+        java.awt.EventQueue.invokeLater(() -> new JFrmMhcPrincipal().setVisible(true));
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
