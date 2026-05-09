@@ -1,15 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 
-<Form version="1.3" maxVersion="1.9" type="org.netbeans.modules.form.forminfo.JDialogFormInfo">
-  <NonVisualComponents>
-    <Component class="javax.swing.JLabel" name="jLabel3">
-      <Properties>
-        <Property name="text" type="java.lang.String" value="jLabel3"/>
-      </Properties>
-    </Component>
-  </NonVisualComponents>
+<Form version="1.3" maxVersion="1.9" type="org.netbeans.modules.form.forminfo.JFrameFormInfo">
   <Properties>
-    <Property name="defaultCloseOperation" type="int" value="2"/>
+    <Property name="defaultCloseOperation" type="int" value="3"/>
   </Properties>
   <SyntheticProperties>
     <SyntheticProperty name="formSizePolicy" type="int" value="1"/>
@@ -33,37 +26,32 @@
           <Group type="102" attributes="0">
               <EmptySpace max="-2" attributes="0"/>
               <Group type="103" groupAlignment="0" attributes="0">
-                  <Component id="jLabel1" alignment="0" min="-2" max="-2" attributes="0"/>
-                  <Component id="jTxtMhcUsuario" alignment="0" min="-2" pref="284" max="-2" attributes="0"/>
-                  <Component id="jLabel2" alignment="0" min="-2" pref="37" max="-2" attributes="0"/>
-                  <Component id="jPwfMhcSenha" alignment="0" min="-2" pref="263" max="-2" attributes="0"/>
-                  <Group type="102" alignment="0" attributes="0">
-                      <Component id="jBtnMhcLogin" min="-2" max="-2" attributes="0"/>
-                      <EmptySpace max="-2" attributes="0"/>
-                      <Component id="jBtnMhcSenhaEsquecida" min="-2" max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                      <Component id="jLabel1" min="-2" max="-2" attributes="0"/>
+                      <Component id="jTxtMhcUsuario" max="32767" attributes="0"/>
+                      <Component id="jLabel2" alignment="0" min="-2" pref="37" max="-2" attributes="0"/>
+                      <Component id="jPwfMhcSenha" alignment="0" pref="213" max="32767" attributes="0"/>
                   </Group>
+                  <Component id="jBtnMhcEntrar" alignment="0" min="-2" max="-2" attributes="0"/>
               </Group>
-              <EmptySpace pref="110" max="32767" attributes="0"/>
+              <EmptySpace pref="181" max="32767" attributes="0"/>
           </Group>
       </Group>
     </DimensionLayout>
     <DimensionLayout dim="1">
       <Group type="103" groupAlignment="0" attributes="0">
           <Group type="102" alignment="0" attributes="0">
-              <EmptySpace min="-2" pref="32" max="-2" attributes="0"/>
+              <EmptySpace min="-2" pref="15" max="-2" attributes="0"/>
               <Component id="jLabel1" min="-2" max="-2" attributes="0"/>
               <EmptySpace max="-2" attributes="0"/>
               <Component id="jTxtMhcUsuario" min="-2" max="-2" attributes="0"/>
-              <EmptySpace type="separate" max="-2" attributes="0"/>
-              <Component id="jLabel2" min="-2" max="-2" attributes="0"/>
               <EmptySpace type="unrelated" max="-2" attributes="0"/>
+              <Component id="jLabel2" min="-2" max="-2" attributes="0"/>
+              <EmptySpace max="-2" attributes="0"/>
               <Component id="jPwfMhcSenha" min="-2" max="-2" attributes="0"/>
-              <EmptySpace type="separate" max="-2" attributes="0"/>
-              <Group type="103" groupAlignment="3" attributes="0">
-                  <Component id="jBtnMhcLogin" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="jBtnMhcSenhaEsquecida" alignment="3" min="-2" max="-2" attributes="0"/>
-              </Group>
-              <EmptySpace pref="115" max="32767" attributes="0"/>
+              <EmptySpace min="-2" pref="32" max="-2" attributes="0"/>
+              <Component id="jBtnMhcEntrar" min="-2" max="-2" attributes="0"/>
+              <EmptySpace pref="130" max="32767" attributes="0"/>
           </Group>
       </Group>
     </DimensionLayout>
@@ -86,18 +74,13 @@
         <Property name="text" type="java.lang.String" value="jPasswordField1"/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JButton" name="jBtnMhcLogin">
+    <Component class="javax.swing.JButton" name="jBtnMhcEntrar">
       <Properties>
-        <Property name="text" type="java.lang.String" value="Login"/>
+        <Property name="text" type="java.lang.String" value="Entrar"/>
       </Properties>
       <Events>
-        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jBtnMhcLoginActionPerformed"/>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jBtnMhcEntrarActionPerformed"/>
       </Events>
-    </Component>
-    <Component class="javax.swing.JButton" name="jBtnMhcSenhaEsquecida">
-      <Properties>
-        <Property name="text" type="java.lang.String" value="Esqueceu a Senha?"/>
-      </Properties>
     </Component>
   </SubComponents>
 </Form>

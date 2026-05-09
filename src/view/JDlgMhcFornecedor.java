@@ -22,18 +22,18 @@ public class JDlgMhcFornecedor extends javax.swing.JDialog {
         setLocationRelativeTo(null);
         jTxtContrato.setEnabled(false);
         jTxtEmail.setEnabled(false);
-        jTxtLglBairro.setEnabled(false);
-        jTxtLglCEP.setEnabled(false);
-        jTxtLglComplemento.setEnabled(false);
-        jTxtLglEndereco.setEnabled(false);
-        jTxtLglNomeComercial.setEnabled(false);
-        jTxtLglNumero.setEnabled(false);
-        jTxtLglSite.setEnabled(false);
+        jTxtMhcBairro.setEnabled(false);
+        jTxtMhcCEP.setEnabled(false);
+        jTxtMhcComplemento.setEnabled(false);
+        jTxtMhcEndereco.setEnabled(false);
+        jTxtMhcNomeComercial.setEnabled(false);
+        jTxtMhcNumero.setEnabled(false);
+        jTxtMhcSite.setEnabled(false);
         jTxtMhcUF.setEnabled(false);
-        jFmtLglCNPJ.setEnabled(false);
+        jFmtMhcCNPJ.setEnabled(false);
         jTxtRazaoSocial.setEnabled(false);
         jTxtTelefone.setEnabled(false);
-        jTxtLglCidade.setEnabled(false);
+        jTxtMhcCidade.setEnabled(false);
         jBtnCancelar.setEnabled(false);
         jBtnConfirmar.setEnabled(false);
         jBtnAlterar.setEnabled(true);
@@ -44,18 +44,18 @@ public class JDlgMhcFornecedor extends javax.swing.JDialog {
 public void habilitar(){
     jTxtContrato.setEnabled(true);
 jTxtEmail.setEnabled(true);
-jTxtLglBairro.setEnabled(true);
-jTxtLglCEP.setEnabled(true);
-jTxtLglComplemento.setEnabled(true);
-jTxtLglEndereco.setEnabled(true);
-jTxtLglNomeComercial.setEnabled(true);
-jTxtLglNumero.setEnabled(true);
-jTxtLglSite.setEnabled(true);
+jTxtMhcBairro.setEnabled(true);
+jTxtMhcCEP.setEnabled(true);
+jTxtMhcComplemento.setEnabled(true);
+jTxtMhcEndereco.setEnabled(true);
+jTxtMhcNomeComercial.setEnabled(true);
+jTxtMhcNumero.setEnabled(true);
+jTxtMhcSite.setEnabled(true);
 jTxtMhcUF.setEnabled(true);
-jFmtLglCNPJ.setEnabled(true);
+jFmtMhcCNPJ.setEnabled(true);
 jTxtRazaoSocial.setEnabled(true);
 jTxtTelefone.setEnabled(true);
-jTxtLglCidade.setEnabled(true);
+jTxtMhcCidade.setEnabled(true);
 jBtnCancelar.setEnabled(true);
 jBtnConfirmar.setEnabled(true);
 jBtnAlterar.setEnabled(false);
@@ -67,18 +67,18 @@ jBtnPesquisar.setEnabled(false);
 public void desabilitar(){
      jTxtContrato.setEnabled(false);
 jTxtEmail.setEnabled(false);
-jTxtLglBairro.setEnabled(false);
-jTxtLglCEP.setEnabled(false);
-jTxtLglComplemento.setEnabled(false);
-jTxtLglEndereco.setEnabled(false);
-jTxtLglNomeComercial.setEnabled(false);
-jTxtLglNumero.setEnabled(false);
-jTxtLglSite.setEnabled(false);
+jTxtMhcBairro.setEnabled(false);
+jTxtMhcCEP.setEnabled(false);
+jTxtMhcComplemento.setEnabled(false);
+jTxtMhcEndereco.setEnabled(false);
+jTxtMhcNomeComercial.setEnabled(false);
+jTxtMhcNumero.setEnabled(false);
+jTxtMhcSite.setEnabled(false);
 jTxtMhcUF.setEnabled(false);
-jFmtLglCNPJ.setEnabled(false);
+jFmtMhcCNPJ.setEnabled(false);
 jTxtRazaoSocial.setEnabled(false);
 jTxtTelefone.setEnabled(false);
-jTxtLglCidade.setEnabled(false);
+jTxtMhcCidade.setEnabled(false);
 jBtnCancelar.setEnabled(false);
 jBtnConfirmar.setEnabled(false);
 jBtnAlterar.setEnabled(true);
@@ -98,37 +98,37 @@ jBtnPesquisar.setEnabled(true);
         jBtnConfirmar = new javax.swing.JButton();
         jLabel7 = new javax.swing.JLabel();
         jBtnCancelar = new javax.swing.JButton();
-        jTxtLglComplemento = new javax.swing.JTextField();
+        jTxtMhcComplemento = new javax.swing.JTextField();
         jBtnPesquisar = new javax.swing.JButton();
         jLblNivel = new javax.swing.JLabel();
         jLabel8 = new javax.swing.JLabel();
-        jTxtLglNumero = new javax.swing.JTextField();
+        jTxtMhcNumero = new javax.swing.JTextField();
         jLblEmail = new javax.swing.JLabel();
         jLabel9 = new javax.swing.JLabel();
         jTxtEmail = new javax.swing.JTextField();
-        jTxtLglCidade = new javax.swing.JTextField();
+        jTxtMhcCidade = new javax.swing.JTextField();
         jLblTelefone = new javax.swing.JLabel();
         jLabel10 = new javax.swing.JLabel();
         jTxtTelefone = new javax.swing.JTextField();
-        jTxtLglUF = new javax.swing.JTextField();
+        jTxtMhcUF = new javax.swing.JTextField();
         jLabel1 = new javax.swing.JLabel();
         jLblNome = new javax.swing.JLabel();
         jTxtRazaoSocial = new javax.swing.JTextField();
         jLblApelido = new javax.swing.JLabel();
-        jTxtLglNomeComercial = new javax.swing.JTextField();
+        jTxtMhcNomeComercial = new javax.swing.JTextField();
         jLblCpf = new javax.swing.JLabel();
-        jFmtLglCNPJ = new javax.swing.JFormattedTextField();
+        jFmtMhcCNPJ = new javax.swing.JFormattedTextField();
         jLblDataNasc = new javax.swing.JLabel();
-        jTxtLglSite = new javax.swing.JTextField();
+        jTxtMhcSite = new javax.swing.JTextField();
         jLabel3 = new javax.swing.JLabel();
         jTxtContrato = new javax.swing.JTextField();
         jBtnIncluir = new javax.swing.JButton();
         jBtnAlterar = new javax.swing.JButton();
-        jTxtLglEndereco = new javax.swing.JTextField();
+        jTxtMhcEndereco = new javax.swing.JTextField();
         jBtnExcluir = new javax.swing.JButton();
-        jTxtLglCEP = new javax.swing.JTextField();
+        jTxtMhcCEP = new javax.swing.JTextField();
         jLblSenha = new javax.swing.JLabel();
-        jTxtLglBairro = new javax.swing.JTextField();
+        jTxtMhcBairro = new javax.swing.JTextField();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
 
@@ -141,6 +141,8 @@ jBtnPesquisar.setEnabled(true);
         jBtnCancelar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/cancelar.png"))); // NOI18N
         jBtnCancelar.setText("Cancelar");
         jBtnCancelar.addActionListener(this::jBtnCancelarActionPerformed);
+
+        jTxtMhcComplemento.addActionListener(this::jTxtMhcComplementoActionPerformed);
 
         jBtnPesquisar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/pesquisar.png"))); // NOI18N
         jBtnPesquisar.setText("Pesquisar");
@@ -163,13 +165,13 @@ jBtnPesquisar.setEnabled(true);
 
         jLblApelido.setText("Nome Comercial");
 
-        jTxtLglNomeComercial.addActionListener(this::jTxtLglNomeComercialActionPerformed);
+        jTxtMhcNomeComercial.addActionListener(this::jTxtMhcNomeComercialActionPerformed);
 
         jLblCpf.setText("CNPJ");
 
         jLblDataNasc.setText("Site");
 
-        jTxtLglSite.addActionListener(this::jTxtLglSiteActionPerformed);
+        jTxtMhcSite.addActionListener(this::jTxtMhcSiteActionPerformed);
 
         jLabel3.setText("Bairro");
 
@@ -213,28 +215,27 @@ jBtnPesquisar.setEnabled(true);
                                 .addGap(78, 78, 78))
                             .addGroup(layout.createSequentialGroup()
                                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(jTxtLglUF, javax.swing.GroupLayout.PREFERRED_SIZE, 33, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(jTxtMhcUF, javax.swing.GroupLayout.PREFERRED_SIZE, 33, javax.swing.GroupLayout.PREFERRED_SIZE)
                                     .addComponent(jLabel10, javax.swing.GroupLayout.PREFERRED_SIZE, 43, javax.swing.GroupLayout.PREFERRED_SIZE))
                                 .addGap(0, 0, Short.MAX_VALUE))))
                     .addGroup(layout.createSequentialGroup()
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jTxtLglSite, javax.swing.GroupLayout.PREFERRED_SIZE, 187, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jTxtMhcSite, javax.swing.GroupLayout.PREFERRED_SIZE, 187, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(jLblDataNasc, javax.swing.GroupLayout.PREFERRED_SIZE, 112, javax.swing.GroupLayout.PREFERRED_SIZE))
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addComponent(jLabel9)
-                            .addComponent(jTxtLglCidade, javax.swing.GroupLayout.PREFERRED_SIZE, 201, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                            .addComponent(jTxtMhcCidade, javax.swing.GroupLayout.PREFERRED_SIZE, 201, javax.swing.GroupLayout.PREFERRED_SIZE)))
                     .addGroup(layout.createSequentialGroup()
-                        .addComponent(jTxtLglEndereco, javax.swing.GroupLayout.PREFERRED_SIZE, 252, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(jTxtMhcEndereco, javax.swing.GroupLayout.PREFERRED_SIZE, 252, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addComponent(jTxtLglCEP, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(jTxtMhcCEP, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(jTxtLglBairro, javax.swing.GroupLayout.PREFERRED_SIZE, 170, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(jTxtMhcBairro, javax.swing.GroupLayout.PREFERRED_SIZE, 170, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(jTxtLglComplemento, javax.swing.GroupLayout.PREFERRED_SIZE, 151, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(jTxtMhcComplemento, javax.swing.GroupLayout.PREFERRED_SIZE, 151, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(jTxtLglNumero))
+                        .addComponent(jTxtMhcNumero))
                     .addGroup(layout.createSequentialGroup()
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addGroup(layout.createSequentialGroup()
@@ -253,7 +254,7 @@ jBtnPesquisar.setEnabled(true);
                                     .addGroup(layout.createSequentialGroup()
                                         .addComponent(jTxtRazaoSocial, javax.swing.GroupLayout.PREFERRED_SIZE, 299, javax.swing.GroupLayout.PREFERRED_SIZE)
                                         .addGap(18, 18, 18)
-                                        .addComponent(jTxtLglNomeComercial, javax.swing.GroupLayout.PREFERRED_SIZE, 322, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                        .addComponent(jTxtMhcNomeComercial, javax.swing.GroupLayout.PREFERRED_SIZE, 322, javax.swing.GroupLayout.PREFERRED_SIZE))
                                     .addGroup(layout.createSequentialGroup()
                                         .addComponent(jLblNome)
                                         .addGap(249, 249, 249)
@@ -261,7 +262,7 @@ jBtnPesquisar.setEnabled(true);
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                     .addComponent(jLblCpf)
-                                    .addComponent(jFmtLglCNPJ, javax.swing.GroupLayout.PREFERRED_SIZE, 221, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                                    .addComponent(jFmtMhcCNPJ, javax.swing.GroupLayout.PREFERRED_SIZE, 221, javax.swing.GroupLayout.PREFERRED_SIZE)))
                             .addGroup(layout.createSequentialGroup()
                                 .addComponent(jLblSenha)
                                 .addGap(211, 211, 211)
@@ -287,16 +288,16 @@ jBtnPesquisar.setEnabled(true);
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(jTxtRazaoSocial, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                        .addComponent(jTxtLglNomeComercial, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addComponent(jFmtLglCNPJ, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                        .addComponent(jTxtMhcNomeComercial, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(jFmtMhcCNPJ, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLblDataNasc)
                     .addComponent(jLabel9))
                 .addGap(5, 5, 5)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jTxtLglSite, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jTxtLglCidade, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(jTxtMhcSite, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jTxtMhcCidade, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLblNivel)
@@ -306,11 +307,11 @@ jBtnPesquisar.setEnabled(true);
                     .addComponent(jLabel8))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jTxtLglEndereco, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jTxtLglCEP, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jTxtLglBairro, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jTxtLglComplemento, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jTxtLglNumero, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(jTxtMhcEndereco, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jTxtMhcCEP, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jTxtMhcBairro, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jTxtMhcComplemento, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jTxtMhcNumero, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLblEmail)
@@ -324,7 +325,7 @@ jBtnPesquisar.setEnabled(true);
                         .addGap(15, 15, 15)
                         .addComponent(jLabel10)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(jTxtLglUF, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(jTxtMhcUF, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(25, 25, 25)
                         .addComponent(jBtnPesquisar))
                     .addGroup(layout.createSequentialGroup()
@@ -345,13 +346,13 @@ jBtnPesquisar.setEnabled(true);
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void jTxtLglNomeComercialActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTxtLglNomeComercialActionPerformed
+    private void jTxtMhcNomeComercialActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTxtMhcNomeComercialActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jTxtLglNomeComercialActionPerformed
+    }//GEN-LAST:event_jTxtMhcNomeComercialActionPerformed
 
-    private void jTxtLglSiteActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTxtLglSiteActionPerformed
+    private void jTxtMhcSiteActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTxtMhcSiteActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jTxtLglSiteActionPerformed
+    }//GEN-LAST:event_jTxtMhcSiteActionPerformed
 
     private void jBtnIncluirActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBtnIncluirActionPerformed
         // TODO add your handling code here:
@@ -372,6 +373,10 @@ desabilitar();
         // TODO add your handling code here:
         habilitar();
     }//GEN-LAST:event_jBtnCancelarActionPerformed
+
+    private void jTxtMhcComplementoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTxtMhcComplementoActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jTxtMhcComplementoActionPerformed
 
     /**
      * @param args the command line arguments
@@ -417,7 +422,7 @@ desabilitar();
     private javax.swing.JButton jBtnExcluir;
     private javax.swing.JButton jBtnIncluir;
     private javax.swing.JButton jBtnPesquisar;
-    private javax.swing.JFormattedTextField jFmtLglCNPJ;
+    private javax.swing.JFormattedTextField jFmtMhcCNPJ;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel3;
@@ -434,15 +439,15 @@ desabilitar();
     private javax.swing.JLabel jLblTelefone;
     private javax.swing.JTextField jTxtContrato;
     private javax.swing.JTextField jTxtEmail;
-    private javax.swing.JTextField jTxtLglBairro;
-    private javax.swing.JTextField jTxtLglCEP;
-    private javax.swing.JTextField jTxtLglCidade;
-    private javax.swing.JTextField jTxtLglComplemento;
-    private javax.swing.JTextField jTxtLglEndereco;
-    private javax.swing.JTextField jTxtLglNomeComercial;
-    private javax.swing.JTextField jTxtLglNumero;
-    private javax.swing.JTextField jTxtLglSite;
-    private javax.swing.JTextField jTxtLglUF;
+    private javax.swing.JTextField jTxtMhcBairro;
+    private javax.swing.JTextField jTxtMhcCEP;
+    private javax.swing.JTextField jTxtMhcCidade;
+    private javax.swing.JTextField jTxtMhcComplemento;
+    private javax.swing.JTextField jTxtMhcEndereco;
+    private javax.swing.JTextField jTxtMhcNomeComercial;
+    private javax.swing.JTextField jTxtMhcNumero;
+    private javax.swing.JTextField jTxtMhcSite;
+    private javax.swing.JTextField jTxtMhcUF;
     private javax.swing.JTextField jTxtRazaoSocial;
     private javax.swing.JTextField jTxtTelefone;
     // End of variables declaration//GEN-END:variables
