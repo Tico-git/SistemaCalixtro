@@ -18,7 +18,7 @@ public class JDlgMhcFornecedor extends javax.swing.JDialog {
     public JDlgMhcFornecedor(java.awt.Frame parent, boolean modal) {
         super(parent, modal);
         initComponents();
-         setTitle("Mecânica Lino - Fornecedor");
+         setTitle("TicoSports - Fornecedor");
         setLocationRelativeTo(null);
         jTxtContrato.setEnabled(false);
         jTxtEmail.setEnabled(false);

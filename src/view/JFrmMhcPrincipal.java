@@ -17,7 +17,7 @@ public class JFrmMhcPrincipal extends javax.swing.JFrame {
      */
     public JFrmMhcPrincipal() {
         initComponents();
-        setTitle("Mecânica Lino - Inicio");
+        setTitle("TicoSports - Inicio");
         setExtendedState(MAXIMIZED_BOTH);
     }
 
@@ -36,7 +36,7 @@ public class JFrmMhcPrincipal extends javax.swing.JFrame {
         jMnuClientes = new javax.swing.JMenuItem();
         jMnuFornecedor = new javax.swing.JMenuItem();
         jMnuProdutos = new javax.swing.JMenuItem();
-        jMnuVeiculos = new javax.swing.JMenuItem();
+        jMnuMhcLicencas = new javax.swing.JMenuItem();
         jSeparator1 = new javax.swing.JPopupMenu.Separator();
         jMnuSair = new javax.swing.JMenuItem();
         jMnuMovimento = new javax.swing.JMenu();
@@ -72,11 +72,11 @@ public class JFrmMhcPrincipal extends javax.swing.JFrame {
         jMnuProdutos.addActionListener(this::jMnuProdutosActionPerformed);
         jMnuCadastro.add(jMnuProdutos);
 
-        jMnuVeiculos.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_V, java.awt.event.InputEvent.ALT_DOWN_MASK | java.awt.event.InputEvent.CTRL_DOWN_MASK));
-        jMnuVeiculos.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/veiculos.png"))); // NOI18N
-        jMnuVeiculos.setText("Veiculos");
-        jMnuVeiculos.addActionListener(this::jMnuVeiculosActionPerformed);
-        jMnuCadastro.add(jMnuVeiculos);
+        jMnuMhcLicencas.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_L, java.awt.event.InputEvent.CTRL_DOWN_MASK));
+        jMnuMhcLicencas.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/licencas.png"))); // NOI18N
+        jMnuMhcLicencas.setText("Licenças");
+        jMnuMhcLicencas.addActionListener(this::jMnuMhcLicencasActionPerformed);
+        jMnuCadastro.add(jMnuMhcLicencas);
         jMnuCadastro.add(jSeparator1);
 
         jMnuSair.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_S, java.awt.event.InputEvent.CTRL_DOWN_MASK));
@@ -139,11 +139,11 @@ dialog.setVisible(true);
 dialog.setVisible(true);
     }//GEN-LAST:event_jMnuProdutosActionPerformed
 
-    private void jMnuVeiculosActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMnuVeiculosActionPerformed
+    private void jMnuMhcLicencasActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMnuMhcLicencasActionPerformed
         // TODO add your handling code here:
-          JDlgMhcVeiculos dialog = new JDlgMhcVeiculos(this, true);
+          JDlgMhcLicencas dialog = new JDlgMhcLicencas(this, true);
 dialog.setVisible(true);
-    }//GEN-LAST:event_jMnuVeiculosActionPerformed
+    }//GEN-LAST:event_jMnuMhcLicencasActionPerformed
 
     /**
      * @param args the command line arguments
@@ -177,11 +177,11 @@ dialog.setVisible(true);
     private javax.swing.JMenu jMnuCadastro;
     private javax.swing.JMenuItem jMnuClientes;
     private javax.swing.JMenuItem jMnuFornecedor;
+    private javax.swing.JMenuItem jMnuMhcLicencas;
     private javax.swing.JMenu jMnuMovimento;
     private javax.swing.JMenuItem jMnuProdutos;
     private javax.swing.JMenuItem jMnuSair;
     private javax.swing.JMenuItem jMnuUsuarios;
-    private javax.swing.JMenuItem jMnuVeiculos;
     private javax.swing.JPopupMenu.Separator jSeparator1;
     // End of variables declaration//GEN-END:variables
 }

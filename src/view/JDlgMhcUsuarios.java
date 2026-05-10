@@ -18,7 +18,7 @@ public class JDlgMhcUsuarios extends javax.swing.JDialog {
     public JDlgMhcUsuarios(java.awt.Frame parent, boolean modal) {
         super(parent, modal);
         initComponents();
-        setTitle("Mecanica Lino - Usuários");
+        setTitle("TicoSports - Usuários");
         setLocationRelativeTo(null);
           jTxtAcessos.setEnabled(false);
         jTxtApelido.setEnabled(false);

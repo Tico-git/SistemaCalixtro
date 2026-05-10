@@ -18,13 +18,13 @@ public class JDlgMhcClientes extends javax.swing.JDialog {
     public JDlgMhcClientes(java.awt.Frame parent, boolean modal) {
         super(parent, modal);
         initComponents();
-        setTitle("Mecânica Lino - Clientes");
+        setTitle("TicoSports - Clientes");
         setLocationRelativeTo(null);
            jTxtDataCadastro.setEnabled(false);
         jTxtEmail.setEnabled(false);
         jTxtLglBairro.setEnabled(false);
         jTxtMhcCEP.setEnabled(false);
-        jTxtLglComplemento.setEnabled(false);
+        jTxtMhcComplemento.setEnabled(false);
         jTxtMhcEndereco.setEnabled(false);
         jTxtApelido.setEnabled(false);
         jTxtLglNumero.setEnabled(false);
@@ -46,7 +46,7 @@ public class JDlgMhcClientes extends javax.swing.JDialog {
 jTxtEmail.setEnabled(true);
 jTxtLglBairro.setEnabled(true);
 jTxtMhcCEP.setEnabled(true);
-jTxtLglComplemento.setEnabled(true);
+jTxtMhcComplemento.setEnabled(true);
 jTxtMhcEndereco.setEnabled(true);
 jTxtApelido.setEnabled(true);
 jTxtLglNumero.setEnabled(true);
@@ -68,7 +68,7 @@ jBtnPesquisar.setEnabled(false);
 jTxtEmail.setEnabled(false);
 jTxtLglBairro.setEnabled(false);
 jTxtMhcCEP.setEnabled(false);
-jTxtLglComplemento.setEnabled(false);
+jTxtMhcComplemento.setEnabled(false);
 jTxtMhcEndereco.setEnabled(false);
 jTxtApelido.setEnabled(false);
 jTxtLglNumero.setEnabled(false);
@@ -123,7 +123,7 @@ jBtnPesquisar.setEnabled(true);
         jTxtMhcCEP = new javax.swing.JTextField();
         jTxtLglBairro = new javax.swing.JTextField();
         jLabel7 = new javax.swing.JLabel();
-        jTxtLglComplemento = new javax.swing.JTextField();
+        jTxtMhcComplemento = new javax.swing.JTextField();
         jLabel8 = new javax.swing.JLabel();
         jTxtLglNumero = new javax.swing.JTextField();
         jLabel9 = new javax.swing.JLabel();
@@ -265,7 +265,7 @@ jBtnPesquisar.setEnabled(true);
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addComponent(jTxtLglBairro, javax.swing.GroupLayout.PREFERRED_SIZE, 170, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(jTxtLglComplemento, javax.swing.GroupLayout.PREFERRED_SIZE, 151, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(jTxtMhcComplemento, javax.swing.GroupLayout.PREFERRED_SIZE, 151, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addComponent(jTxtLglNumero))
                     .addGroup(layout.createSequentialGroup()
@@ -346,7 +346,7 @@ jBtnPesquisar.setEnabled(true);
                     .addComponent(jTxtMhcEndereco, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jTxtMhcCEP, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jTxtLglBairro, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jTxtLglComplemento, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jTxtMhcComplemento, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jTxtLglNumero, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
@@ -483,12 +483,12 @@ jBtnPesquisar.setEnabled(true);
     private javax.swing.JTextField jTxtHoraCadastro;
     private javax.swing.JTextField jTxtLglBairro;
     private javax.swing.JTextField jTxtLglCidade;
-    private javax.swing.JTextField jTxtLglComplemento;
     private javax.swing.JTextField jTxtLglEstadoCivil;
     private javax.swing.JTextField jTxtLglNaturalidade;
     private javax.swing.JTextField jTxtLglNumero;
     private javax.swing.JTextField jTxtLglUF;
     private javax.swing.JTextField jTxtMhcCEP;
+    private javax.swing.JTextField jTxtMhcComplemento;
     private javax.swing.JTextField jTxtMhcEndereco;
     private javax.swing.JTextField jTxtNome;
     private javax.swing.JTextField jTxtTelefone;

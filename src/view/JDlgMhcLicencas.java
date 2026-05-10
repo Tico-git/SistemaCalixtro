@@ -8,24 +8,25 @@ package view;
  *
  * @author mhscm
  */
-public class JDlgMhcVeiculos extends javax.swing.JDialog {
+public class JDlgMhcLicencas extends javax.swing.JDialog {
     
-    private static final java.util.logging.Logger logger = java.util.logging.Logger.getLogger(JDlgMhcVeiculos.class.getName());
+    private static final java.util.logging.Logger logger = java.util.logging.Logger.getLogger(JDlgMhcLicencas.class.getName());
 
     /**
      * Creates new form JDlgLglVeiculos
      */
-    public JDlgMhcVeiculos(java.awt.Frame parent, boolean modal) {
+    public JDlgMhcLicencas(java.awt.Frame parent, boolean modal) {
         super(parent, modal);
         initComponents();
-         setTitle("Mecânica Lino - Veículos");
+         setTitle("TicoSports - Licenças");
         setLocationRelativeTo(null);
-        jTxtLglID.setEnabled(false);
-        jTxtLglCliente.setEnabled(false);
-        jTxtLglCor.setEnabled(false);
-        jTxtLglMarca.setEnabled(false);
-        jTxtLglModelo.setEnabled(false);
-        jTxtLglPlaca.setEnabled(false);
+        jTxtMhclD.setEnabled(false);
+        jTxtMhcDataInicio.setEnabled(false);
+        jTxtMhcDataExpiracao.setEnabled(false);
+        jTxtMhcEmpresa.setEnabled(false);
+        jTxtMhcTipo.setEnabled(false);
+        jTxtMhcMarca.setEnabled(false);
+        jCboMhcStatus.setEnabled(false);
         jBtnCancelar.setEnabled(false);
         jBtnConfirmar.setEnabled(false);
         jBtnAlterar.setEnabled(true);
@@ -34,12 +35,13 @@ public class JDlgMhcVeiculos extends javax.swing.JDialog {
         jBtnPesquisar.setEnabled(true);
     }
 public void habilitar(){
- jTxtLglID.setEnabled(true);
-jTxtLglCliente.setEnabled(true);
-jTxtLglCor.setEnabled(true);
-jTxtLglMarca.setEnabled(true);
-jTxtLglModelo.setEnabled(true);
-jTxtLglPlaca.setEnabled(true);
+ jTxtMhclD.setEnabled(true);
+jTxtMhcDataInicio.setEnabled(true);
+jTxtMhcDataExpiracao.setEnabled(true);
+jTxtMhcEmpresa.setEnabled(true);
+jTxtMhcTipo.setEnabled(true);
+jTxtMhcMarca.setEnabled(true);
+jCboMhcStatus.setEnabled(true);
 jBtnCancelar.setEnabled(true);
 jBtnConfirmar.setEnabled(true);
 jBtnAlterar.setEnabled(false);
@@ -49,12 +51,13 @@ jBtnPesquisar.setEnabled(false);
 }
 
 public void desabilitar(){
- jTxtLglID.setEnabled(false);
-jTxtLglCliente.setEnabled(false);
-jTxtLglCor.setEnabled(false);
-jTxtLglMarca.setEnabled(false);
-jTxtLglModelo.setEnabled(false);
-jTxtLglPlaca.setEnabled(false);
+ jTxtMhclD.setEnabled(false);
+jTxtMhcDataInicio.setEnabled(false);
+jTxtMhcDataExpiracao.setEnabled(false);
+jTxtMhcEmpresa.setEnabled(false);
+jTxtMhcTipo.setEnabled(false);
+jTxtMhcMarca.setEnabled(false);
+jCboMhcStatus.setEnabled(false);
 jBtnCancelar.setEnabled(false);
 jBtnConfirmar.setEnabled(false);
 jBtnAlterar.setEnabled(true);
@@ -72,11 +75,11 @@ jBtnPesquisar.setEnabled(true);
     private void initComponents() {
 
         jLabel1 = new javax.swing.JLabel();
-        jTxtLglID = new javax.swing.JTextField();
-        jTxtLglPlaca = new javax.swing.JTextField();
+        jTxtMhclD = new javax.swing.JTextField();
+        jTxtMhcMarca = new javax.swing.JTextField();
         jLabel2 = new javax.swing.JLabel();
         jLabel3 = new javax.swing.JLabel();
-        jTxtLglModelo = new javax.swing.JTextField();
+        jTxtMhcTipo = new javax.swing.JTextField();
         jBtnPesquisar = new javax.swing.JButton();
         jBtnIncluir = new javax.swing.JButton();
         jBtnAlterar = new javax.swing.JButton();
@@ -84,21 +87,21 @@ jBtnPesquisar.setEnabled(true);
         jBtnConfirmar = new javax.swing.JButton();
         jBtnCancelar = new javax.swing.JButton();
         jLabel4 = new javax.swing.JLabel();
-        jTxtLglMarca = new javax.swing.JTextField();
+        jTxtMhcEmpresa = new javax.swing.JTextField();
         jLabel5 = new javax.swing.JLabel();
-        jTextField1 = new javax.swing.JTextField();
+        jTxtMhcDataInicio = new javax.swing.JTextField();
         jLabel6 = new javax.swing.JLabel();
-        jTxtLglCor = new javax.swing.JTextField();
+        jTxtMhcDataExpiracao = new javax.swing.JTextField();
         jLabel7 = new javax.swing.JLabel();
-        jTxtLglCliente = new javax.swing.JTextField();
+        jCboMhcStatus = new javax.swing.JComboBox<>();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
 
         jLabel1.setText("ID");
 
-        jLabel2.setText("Placa");
+        jLabel2.setText("Marca");
 
-        jLabel3.setText("Modelo");
+        jLabel3.setText("Tipo");
 
         jBtnPesquisar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/pesquisar.png"))); // NOI18N
         jBtnPesquisar.setText("Pesquisar");
@@ -122,13 +125,15 @@ jBtnPesquisar.setEnabled(true);
         jBtnCancelar.setText("Cancelar");
         jBtnCancelar.addActionListener(this::jBtnCancelarActionPerformed);
 
-        jLabel4.setText("Marca");
+        jLabel4.setText("Empresa");
 
-        jLabel5.setText("Ano de Fabricação");
+        jLabel5.setText("Data de Inicio");
 
-        jLabel6.setText("Cor");
+        jLabel6.setText("Data de Expiração");
 
-        jLabel7.setText("Cliente");
+        jLabel7.setText("Status");
+
+        jCboMhcStatus.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -144,9 +149,7 @@ jBtnPesquisar.setEnabled(true);
                                 .addGap(18, 18, 18)
                                 .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 37, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addGap(72, 72, 72)
-                                .addComponent(jLabel3)
-                                .addGap(159, 159, 159)
-                                .addComponent(jLabel4))
+                                .addComponent(jLabel3))
                             .addGroup(layout.createSequentialGroup()
                                 .addComponent(jBtnIncluir)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
@@ -163,25 +166,27 @@ jBtnPesquisar.setEnabled(true);
                         .addContainerGap()
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addGroup(layout.createSequentialGroup()
-                                .addComponent(jTxtLglID, javax.swing.GroupLayout.PREFERRED_SIZE, 43, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                .addComponent(jTxtLglPlaca, javax.swing.GroupLayout.PREFERRED_SIZE, 91, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addGap(18, 18, 18)
-                                .addComponent(jTxtLglModelo, javax.swing.GroupLayout.PREFERRED_SIZE, 186, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                .addComponent(jTxtLglMarca, javax.swing.GroupLayout.PREFERRED_SIZE, 186, javax.swing.GroupLayout.PREFERRED_SIZE))
-                            .addGroup(layout.createSequentialGroup()
                                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                     .addComponent(jLabel5)
-                                    .addComponent(jTextField1, javax.swing.GroupLayout.PREFERRED_SIZE, 146, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                    .addComponent(jTxtMhcDataInicio, javax.swing.GroupLayout.PREFERRED_SIZE, 146, javax.swing.GroupLayout.PREFERRED_SIZE))
                                 .addGap(28, 28, 28)
                                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(jTxtLglCor, javax.swing.GroupLayout.PREFERRED_SIZE, 131, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(jTxtMhcDataExpiracao, javax.swing.GroupLayout.PREFERRED_SIZE, 131, javax.swing.GroupLayout.PREFERRED_SIZE)
                                     .addComponent(jLabel6))
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                     .addComponent(jLabel7, javax.swing.GroupLayout.PREFERRED_SIZE, 37, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(jTxtLglCliente, javax.swing.GroupLayout.PREFERRED_SIZE, 186, javax.swing.GroupLayout.PREFERRED_SIZE))))))
+                                    .addComponent(jCboMhcStatus, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                            .addGroup(layout.createSequentialGroup()
+                                .addComponent(jTxtMhclD, javax.swing.GroupLayout.PREFERRED_SIZE, 43, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                .addComponent(jTxtMhcMarca, javax.swing.GroupLayout.PREFERRED_SIZE, 91, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGap(18, 18, 18)
+                                .addComponent(jTxtMhcTipo, javax.swing.GroupLayout.PREFERRED_SIZE, 186, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addComponent(jLabel4)
+                                    .addComponent(jTxtMhcEmpresa, javax.swing.GroupLayout.PREFERRED_SIZE, 186, javax.swing.GroupLayout.PREFERRED_SIZE))))))
                 .addContainerGap(129, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
@@ -194,10 +199,10 @@ jBtnPesquisar.setEnabled(true);
                     .addComponent(jLabel4))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jTxtLglID, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jTxtLglPlaca, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jTxtLglModelo, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jTxtLglMarca, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(jTxtMhclD, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jTxtMhcMarca, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jTxtMhcTipo, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jTxtMhcEmpresa, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(46, 46, 46)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel5)
@@ -205,9 +210,9 @@ jBtnPesquisar.setEnabled(true);
                     .addComponent(jLabel7))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jTextField1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jTxtLglCor, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jTxtLglCliente, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(jTxtMhcDataInicio, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jTxtMhcDataExpiracao, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jCboMhcStatus, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 21, Short.MAX_VALUE)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jBtnIncluir)
@@ -267,7 +272,7 @@ jBtnPesquisar.setEnabled(true);
         java.awt.EventQueue.invokeLater(new Runnable() {
             @Override
             public void run() {
-                JDlgMhcVeiculos dialog = new JDlgMhcVeiculos(new javax.swing.JFrame(), true);
+                JDlgMhcLicencas dialog = new JDlgMhcLicencas(new javax.swing.JFrame(), true);
                 dialog.addWindowListener(new java.awt.event.WindowAdapter() {
                     @Override
                     public void windowClosing(java.awt.event.WindowEvent e) {
@@ -286,6 +291,7 @@ jBtnPesquisar.setEnabled(true);
     private javax.swing.JButton jBtnExcluir;
     private javax.swing.JButton jBtnIncluir;
     private javax.swing.JButton jBtnPesquisar;
+    private javax.swing.JComboBox<String> jCboMhcStatus;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
@@ -293,12 +299,11 @@ jBtnPesquisar.setEnabled(true);
     private javax.swing.JLabel jLabel5;
     private javax.swing.JLabel jLabel6;
     private javax.swing.JLabel jLabel7;
-    private javax.swing.JTextField jTextField1;
-    private javax.swing.JTextField jTxtLglCliente;
-    private javax.swing.JTextField jTxtLglCor;
-    private javax.swing.JTextField jTxtLglID;
-    private javax.swing.JTextField jTxtLglMarca;
-    private javax.swing.JTextField jTxtLglModelo;
-    private javax.swing.JTextField jTxtLglPlaca;
+    private javax.swing.JTextField jTxtMhcDataExpiracao;
+    private javax.swing.JTextField jTxtMhcDataInicio;
+    private javax.swing.JTextField jTxtMhcEmpresa;
+    private javax.swing.JTextField jTxtMhcMarca;
+    private javax.swing.JTextField jTxtMhcTipo;
+    private javax.swing.JTextField jTxtMhclD;
     // End of variables declaration//GEN-END:variables
 }

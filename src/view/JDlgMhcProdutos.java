@@ -20,7 +20,7 @@ public class JDlgMhcProdutos extends javax.swing.JDialog {
     public JDlgMhcProdutos(java.awt.Frame parent, boolean modal) {
         super(parent, modal);
         initComponents();
-        setTitle("Mecânica Lino - Produtos");
+        setTitle("TicoSports - Produtos");
         setLocationRelativeTo(null);
         jTxtLglCategoria.setEnabled(false);
         jTxtLglDescricao.setEnabled(false);

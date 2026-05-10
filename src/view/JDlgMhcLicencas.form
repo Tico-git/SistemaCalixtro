@@ -34,8 +34,6 @@
                               <Component id="jLabel2" min="-2" pref="37" max="-2" attributes="0"/>
                               <EmptySpace min="-2" pref="72" max="-2" attributes="0"/>
                               <Component id="jLabel3" min="-2" max="-2" attributes="0"/>
-                              <EmptySpace min="-2" pref="159" max="-2" attributes="0"/>
-                              <Component id="jLabel4" min="-2" max="-2" attributes="0"/>
                           </Group>
                           <Group type="102" alignment="0" attributes="0">
                               <Component id="jBtnIncluir" min="-2" max="-2" attributes="0"/>
@@ -56,28 +54,31 @@
                       <EmptySpace max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="0" attributes="0">
                           <Group type="102" attributes="0">
-                              <Component id="jTxtLglID" min="-2" pref="43" max="-2" attributes="0"/>
-                              <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                              <Component id="jTxtLglPlaca" min="-2" pref="91" max="-2" attributes="0"/>
-                              <EmptySpace type="separate" max="-2" attributes="0"/>
-                              <Component id="jTxtLglModelo" min="-2" pref="186" max="-2" attributes="0"/>
-                              <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                              <Component id="jTxtLglMarca" min="-2" pref="186" max="-2" attributes="0"/>
-                          </Group>
-                          <Group type="102" attributes="0">
                               <Group type="103" groupAlignment="0" attributes="0">
                                   <Component id="jLabel5" alignment="0" min="-2" max="-2" attributes="0"/>
-                                  <Component id="jTextField1" alignment="0" min="-2" pref="146" max="-2" attributes="0"/>
+                                  <Component id="jTxtMhcDataInicio" alignment="0" min="-2" pref="146" max="-2" attributes="0"/>
                               </Group>
                               <EmptySpace min="-2" pref="28" max="-2" attributes="0"/>
                               <Group type="103" groupAlignment="0" attributes="0">
-                                  <Component id="jTxtLglCor" alignment="0" min="-2" pref="131" max="-2" attributes="0"/>
+                                  <Component id="jTxtMhcDataExpiracao" alignment="0" min="-2" pref="131" max="-2" attributes="0"/>
                                   <Component id="jLabel6" alignment="0" min="-2" max="-2" attributes="0"/>
                               </Group>
                               <EmptySpace max="-2" attributes="0"/>
                               <Group type="103" groupAlignment="0" attributes="0">
                                   <Component id="jLabel7" min="-2" pref="37" max="-2" attributes="0"/>
-                                  <Component id="jTxtLglCliente" min="-2" pref="186" max="-2" attributes="0"/>
+                                  <Component id="jCboMhcStatus" alignment="0" min="-2" max="-2" attributes="0"/>
+                              </Group>
+                          </Group>
+                          <Group type="102" alignment="0" attributes="0">
+                              <Component id="jTxtMhclD" min="-2" pref="43" max="-2" attributes="0"/>
+                              <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                              <Component id="jTxtMhcMarca" min="-2" pref="91" max="-2" attributes="0"/>
+                              <EmptySpace type="separate" max="-2" attributes="0"/>
+                              <Component id="jTxtMhcTipo" min="-2" pref="186" max="-2" attributes="0"/>
+                              <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="0" attributes="0">
+                                  <Component id="jLabel4" min="-2" max="-2" attributes="0"/>
+                                  <Component id="jTxtMhcEmpresa" min="-2" pref="186" max="-2" attributes="0"/>
                               </Group>
                           </Group>
                       </Group>
@@ -98,10 +99,10 @@
               </Group>
               <EmptySpace max="-2" attributes="0"/>
               <Group type="103" groupAlignment="3" attributes="0">
-                  <Component id="jTxtLglID" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="jTxtLglPlaca" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="jTxtLglModelo" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="jTxtLglMarca" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="jTxtMhclD" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="jTxtMhcMarca" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="jTxtMhcTipo" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="jTxtMhcEmpresa" alignment="3" min="-2" max="-2" attributes="0"/>
               </Group>
               <EmptySpace min="-2" pref="46" max="-2" attributes="0"/>
               <Group type="103" groupAlignment="3" attributes="0">
@@ -111,9 +112,9 @@
               </Group>
               <EmptySpace max="-2" attributes="0"/>
               <Group type="103" groupAlignment="3" attributes="0">
-                  <Component id="jTextField1" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="jTxtLglCor" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="jTxtLglCliente" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="jTxtMhcDataInicio" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="jTxtMhcDataExpiracao" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="jCboMhcStatus" alignment="3" min="-2" max="-2" attributes="0"/>
               </Group>
               <EmptySpace pref="21" max="32767" attributes="0"/>
               <Group type="103" groupAlignment="3" attributes="0">
@@ -135,21 +136,21 @@
         <Property name="text" type="java.lang.String" value="ID"/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JTextField" name="jTxtLglID">
+    <Component class="javax.swing.JTextField" name="jTxtMhclD">
     </Component>
-    <Component class="javax.swing.JTextField" name="jTxtLglPlaca">
+    <Component class="javax.swing.JTextField" name="jTxtMhcMarca">
     </Component>
     <Component class="javax.swing.JLabel" name="jLabel2">
       <Properties>
-        <Property name="text" type="java.lang.String" value="Placa"/>
+        <Property name="text" type="java.lang.String" value="Marca"/>
       </Properties>
     </Component>
     <Component class="javax.swing.JLabel" name="jLabel3">
       <Properties>
-        <Property name="text" type="java.lang.String" value="Modelo"/>
+        <Property name="text" type="java.lang.String" value="Tipo"/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JTextField" name="jTxtLglModelo">
+    <Component class="javax.swing.JTextField" name="jTxtMhcTipo">
     </Component>
     <Component class="javax.swing.JButton" name="jBtnPesquisar">
       <Properties>
@@ -213,31 +214,44 @@
     </Component>
     <Component class="javax.swing.JLabel" name="jLabel4">
       <Properties>
-        <Property name="text" type="java.lang.String" value="Marca"/>
+        <Property name="text" type="java.lang.String" value="Empresa"/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JTextField" name="jTxtLglMarca">
+    <Component class="javax.swing.JTextField" name="jTxtMhcEmpresa">
     </Component>
     <Component class="javax.swing.JLabel" name="jLabel5">
       <Properties>
-        <Property name="text" type="java.lang.String" value="Ano de Fabrica&#xe7;&#xe3;o"/>
+        <Property name="text" type="java.lang.String" value="Data de Inicio"/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JTextField" name="jTextField1">
+    <Component class="javax.swing.JTextField" name="jTxtMhcDataInicio">
     </Component>
     <Component class="javax.swing.JLabel" name="jLabel6">
       <Properties>
-        <Property name="text" type="java.lang.String" value="Cor"/>
+        <Property name="text" type="java.lang.String" value="Data de Expira&#xe7;&#xe3;o"/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JTextField" name="jTxtLglCor">
+    <Component class="javax.swing.JTextField" name="jTxtMhcDataExpiracao">
     </Component>
     <Component class="javax.swing.JLabel" name="jLabel7">
       <Properties>
-        <Property name="text" type="java.lang.String" value="Cliente"/>
+        <Property name="text" type="java.lang.String" value="Status"/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JTextField" name="jTxtLglCliente">
+    <Component class="javax.swing.JComboBox" name="jCboMhcStatus">
+      <Properties>
+        <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.editors2.ComboBoxModelEditor">
+          <StringArray count="4">
+            <StringItem index="0" value="Item 1"/>
+            <StringItem index="1" value="Item 2"/>
+            <StringItem index="2" value="Item 3"/>
+            <StringItem index="3" value="Item 4"/>
+          </StringArray>
+        </Property>
+      </Properties>
+      <AuxValues>
+        <AuxValue name="JavaCodeGenerator_TypeParameters" type="java.lang.String" value="&lt;String&gt;"/>
+      </AuxValues>
     </Component>
   </SubComponents>
 </Form>
