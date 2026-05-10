@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 
-<Form version="1.3" maxVersion="1.9" type="org.netbeans.modules.form.forminfo.JFrameFormInfo">
+<Form version="1.3" maxVersion="1.9" type="org.netbeans.modules.form.forminfo.JDialogFormInfo">
   <Properties>
-    <Property name="defaultCloseOperation" type="int" value="3"/>
+    <Property name="defaultCloseOperation" type="int" value="2"/>
   </Properties>
   <SyntheticProperties>
     <SyntheticProperty name="formSizePolicy" type="int" value="1"/>
@@ -30,28 +30,28 @@
                       <Component id="jLabel1" min="-2" max="-2" attributes="0"/>
                       <Component id="jTxtMhcUsuario" max="32767" attributes="0"/>
                       <Component id="jLabel2" alignment="0" min="-2" pref="37" max="-2" attributes="0"/>
-                      <Component id="jPwfMhcSenha" alignment="0" pref="213" max="32767" attributes="0"/>
+                      <Component id="jPwfMhcSenha" alignment="0" pref="266" max="32767" attributes="0"/>
                   </Group>
-                  <Component id="jBtnMhcEntrar" alignment="0" min="-2" max="-2" attributes="0"/>
+                  <Component id="jBtnMhcLogin" alignment="0" min="-2" max="-2" attributes="0"/>
               </Group>
-              <EmptySpace pref="181" max="32767" attributes="0"/>
+              <EmptySpace pref="128" max="32767" attributes="0"/>
           </Group>
       </Group>
     </DimensionLayout>
     <DimensionLayout dim="1">
       <Group type="103" groupAlignment="0" attributes="0">
           <Group type="102" alignment="0" attributes="0">
-              <EmptySpace min="-2" pref="15" max="-2" attributes="0"/>
-              <Component id="jLabel1" min="-2" max="-2" attributes="0"/>
+              <EmptySpace max="-2" attributes="0"/>
+              <Component id="jLabel1" min="-2" pref="16" max="-2" attributes="0"/>
               <EmptySpace max="-2" attributes="0"/>
               <Component id="jTxtMhcUsuario" min="-2" max="-2" attributes="0"/>
               <EmptySpace type="unrelated" max="-2" attributes="0"/>
               <Component id="jLabel2" min="-2" max="-2" attributes="0"/>
-              <EmptySpace max="-2" attributes="0"/>
+              <EmptySpace type="unrelated" max="-2" attributes="0"/>
               <Component id="jPwfMhcSenha" min="-2" max="-2" attributes="0"/>
-              <EmptySpace min="-2" pref="32" max="-2" attributes="0"/>
-              <Component id="jBtnMhcEntrar" min="-2" max="-2" attributes="0"/>
-              <EmptySpace pref="130" max="32767" attributes="0"/>
+              <EmptySpace min="-2" pref="50" max="-2" attributes="0"/>
+              <Component id="jBtnMhcLogin" min="-2" max="-2" attributes="0"/>
+              <EmptySpace pref="99" max="32767" attributes="0"/>
           </Group>
       </Group>
     </DimensionLayout>
@@ -70,16 +70,16 @@
       </Properties>
     </Component>
     <Component class="javax.swing.JPasswordField" name="jPwfMhcSenha">
-      <Properties>
-        <Property name="text" type="java.lang.String" value="jPasswordField1"/>
-      </Properties>
     </Component>
-    <Component class="javax.swing.JButton" name="jBtnMhcEntrar">
+    <Component class="javax.swing.JButton" name="jBtnMhcLogin">
       <Properties>
+        <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+          <Image iconType="3" name="/imagens/ok.png"/>
+        </Property>
         <Property name="text" type="java.lang.String" value="Entrar"/>
       </Properties>
       <Events>
-        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jBtnMhcEntrarActionPerformed"/>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jBtnMhcLoginActionPerformed"/>
       </Events>
     </Component>
   </SubComponents>
