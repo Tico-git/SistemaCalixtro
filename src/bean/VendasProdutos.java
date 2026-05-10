@@ -1,3 +1,5 @@
+package bean;
+
 public class VendasProdutos {
 
     private int mhc_idVendaProduto;
